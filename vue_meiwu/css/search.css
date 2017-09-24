@@ -1,0 +1,43 @@
+/*搜索框*/
+.seek {
+	margin-left: 10%;
+	width: 80%;
+	background-color: white;
+	padding-bottom: 10px;
+	background-color: #00862e; 
+}
+
+.seek input {
+	width: 70%;
+	font-size: .8rem;
+	border: 0;
+	outline: 0;
+	text-indent: 5px;
+	border-color: white;
+	/*line-height: 25px;*/
+	height: 25px;
+	border-radius: 0;
+}
+
+.seek button {
+	width: 30%;
+	float: right;
+	font-size: .8rem;
+	border: 0;
+	outline: 0;
+	background-color: white;
+}
+
+.seek button img {
+	width: 23px;
+	margin-left: -30%;
+	margin-top: 0
+}
+
+.seek button span {
+	display: block;
+	margin-left: 45%;
+	margin-top: -34%;
+	line-height: 23px;
+	/*color: #abadae;*/
+}

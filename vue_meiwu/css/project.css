@@ -1,0 +1,64 @@
+/*详情*/
+.particulars {
+	width: 100%
+}
+/*详情页主题图*/
+.img12 {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+/*详情内容*/
+.particulars_li {
+	clear: both;
+	/*padding-top: 10px;*/
+}
+.project_xli {
+	display: none;
+}
+/*详情标题*/
+.particulars_li h4 {
+	font-size: 1.1rem;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-left: 3%;
+	width: 94%;
+}
+.particulars_li h5 {
+	font-size: 0.9rem;
+	width: 94%;
+	margin-left: 3%;
+	margin-bottom: 10px;
+}
+/*详情文字内容*/
+.particulars_li p {
+	width: 94%;
+	text-indent: 1.6rem;
+	font-size: .8rem;
+	margin-bottom: 10px;
+	margin-left: 3%;
+	/*color: #abadae;*/
+}
+.particulars_li img {
+	width: 94%;
+	margin-left: 3%;
+	margin-bottom: 10px;
+	display: block;
+}
+/*栏目题目*/
+.project_x {
+	width: 100%;
+	/*margin-top: 6px;*/
+}
+/*文字题目*/
+.project_x li .project_xdiv{
+	width: 100%;
+	font-size: .85rem;
+	background: url(../img/lan.png) no-repeat;
+	/*height: 30px;*/
+	margin-bottom: 10px;
+	line-height: 30px;
+	text-align: center;
+	color: white;
+}
