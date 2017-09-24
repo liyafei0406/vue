@@ -1,9 +1,9 @@
 //头部显示
-let headeros = {
+var headeros = {
 	headers1:'诚约合作',
 	hesders1_1:'合作内容'
 };
-let pps = document.getElementsByClassName('header_ppp')[0];
+var pps = document.getElementsByClassName('header_ppp')[0];
 Vue.component('my-headerp1',{
 template: '<p class="header_p1">{{headeros.headers1}}</p>'
 });
@@ -11,13 +11,13 @@ Vue.component('my-headerp2',{
 template: '<p class="header_p2">{{headeros.hesders1_1}}</p>'
 });
 pps.innerHTML = '<my-headerp1 id="headerp1"></my-headerp1> <my-headerp2 id="headerp2"></my-headerp2>'
-let vm5_1 = new Vue({
+var vm5_1 = new Vue({
 	el: "#headerp1"
 });
-let vm5_2 = new Vue({
+var vm5_2 = new Vue({
 	el: "#headerp2"
 });
-let cooperationers = {
+var cooperationers = {
 	cooperationersImg1:'img/banner06.jpg',
 	cooperationersLi: {
 		H4:'请仔细阅读   这是成为“财富新贵”的必经之路',
@@ -94,40 +94,40 @@ let cooperationers = {
 				}				
 	]
 };
-let Img5_1 = Vue.extend({
+var Img5_1 = Vue.extend({
 template: '<img class="img12" v-bind:src="cooperationers.cooperationersImg1"/>'
 });
-let h45_1 = Vue.extend({
+var h45_1 = Vue.extend({
 	template:'<h4>{{cooperationers.cooperationersLi.H4}}</h4>'
 });
-let h55_1 = Vue.extend({
+var h55_1 = Vue.extend({
 	template:'<h5>{{cooperationers.cooperationersLi.H5_1}}</h5>'
 });
-let p5_1 = Vue.extend({
+var p5_1 = Vue.extend({
 	template:'<p>{{cooperationers.cooperationersLi.P1}}</p>'
 });
-let p5_2 = Vue.extend({
+var p5_2 = Vue.extend({
 	template:'<p>{{cooperationers.cooperationersLi.P2}}</p>'
 });
-let p5_3 = Vue.extend({
+var p5_3 = Vue.extend({
 	template:'<p>{{cooperationers.cooperationersLi.P3}}</p>'
 });
-let p5_4 = Vue.extend({
+var p5_4 = Vue.extend({
 	template:'<p>{{cooperationers.cooperationersLi.P4}}</p>'
 });
-let p5_5 = Vue.extend({
+var p5_5 = Vue.extend({
 	template:'<p>{{cooperationers.cooperationersLi.P5}}</p>'
 });
-let p5_6 = Vue.extend({
+var p5_6 = Vue.extend({
 	template:'<p>{{cooperationers.cooperationersLi.P6}}</p>'
 });
-let Img5_2 = Vue.extend({
+var Img5_2 = Vue.extend({
 	template:'<img v-bind:src="cooperationers.cooperationersLi.img1" />'
 });
-let Img5_3 = Vue.extend({
+var Img5_3 = Vue.extend({
 	template:'<img v-bind:src="cooperationers.cooperationersLi.img2" />'
 });
-let div5_1 = Vue.extend({
+var div5_1 = Vue.extend({
 	template:'<div class="particulars_li project_div"><child5></child5><child6></child6><child7></child7><child8></child8><child9></child9><child10></child10><child11></child11><child12></child12><child13></child13><child14></child14></div>',
 	components: {
 		'child5': h45_1,
@@ -142,10 +142,10 @@ let div5_1 = Vue.extend({
     	'child14': Img5_3    	
 	}
 });
-let ul5_1 = Vue.extend({
+var ul5_1 = Vue.extend({
 	template:'<ul><li v-for="cooperationersx in cooperationers.cooperationersDiv"><div class="project_xdiv">{{cooperationersx.cooperationersName}}</div><div class="particulars_li project_xli"><h4>{{cooperationersx.h0}}</h4><h5>{{cooperationersx.h1}}</h5><p>{{cooperationersx.p1}}</p><img v-bind:src="cooperationersx.img1"/><h5>{{cooperationersx.h2}}</h5><p>{{cooperationersx.p2}}</p><img v-bind:src="cooperationersx.img2"/><h5>{{cooperationersx.h3}}</h5><p>{{cooperationersx.p3}}</p><img v-bind:src="cooperationersx.img3"/><h5>{{cooperationersx.h4}}</h5><p>{{cooperationersx.p4}}</p><img v-bind:src="cooperationersx.img4"/><h5>{{cooperationersx.h5}}</h5><p>{{cooperationersx.p5}}</p><h5>{{cooperationersx.h6}}</h5><p>{{cooperationersx.p6}}</p></div></li></ul>'
 });
-let div5_2 = Vue.extend({
+var div5_2 = Vue.extend({
 	template:'<div class="project_x"><child4></child4></div>',
 	components: {
 		'child4': ul5_1
@@ -160,6 +160,6 @@ Vue.component('my-cooperationers1',{
     'child3': div5_2
    }
 });
-let vm5_3 = new Vue({
+var vm5_3 = new Vue({
 	el: "#cooperationer"
 });

@@ -1,4 +1,4 @@
-let successfulCases = {
+var successfulCases = {
 	successfulCases1: "market_analysis.html?numb2=2",
 	successfulCasesbiao: "成功案例",
 	successfulCases2: [
@@ -9,13 +9,13 @@ let successfulCases = {
 		{successfulCasesImg:'img/ren05.jpg',successfulCasesName:'代理商-杨国欢',successfulCasesDetails:'做生意真的就是做人，诚实、踏实地干，做啥都成！'},
 	]
 };
-let p5 = Vue.extend({
+var p5 = Vue.extend({
 template: '<p class="in_h">{{successfulCases.successfulCasesbiao}}</p>'
 });
-let hr5 = Vue.extend({
+var hr5 = Vue.extend({
 template: '<hr style="clear: both; border: none; border-bottom: 1px solid #dfdfdf; margin-bottom: 10px;" />'
 });
-let ul6 = Vue.extend({
+var ul6 = Vue.extend({
 template: "<ul><li v-for='successfulCaseser in successfulCases.successfulCases2'><a v-bind:href='successfulCases.successfulCases1'><img class='successful_li' v-bind:src='successfulCaseser.successfulCasesImg'/><div class='successful_ld'><p>{{successfulCaseser.successfulCasesName}}</p><p>{{successfulCaseser.successfulCasesDetails}}</p></div></a></li></ul>"
 });
 Vue.component('my-successful1',{
@@ -27,6 +27,6 @@ Vue.component('my-successful1',{
     
    }
 });
-let vm9 = new Vue({
+var vm9 = new Vue({
 	el: "#successfulCase"
 });

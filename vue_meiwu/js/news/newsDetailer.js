@@ -1,9 +1,9 @@
 //头部显示
-let headeros = {
+var headeros = {
 	headers1:'新闻详情',
 	hesders1_1:'详情介绍'
 };
-let pps = document.getElementsByClassName('header_ppp')[0];
+var pps = document.getElementsByClassName('header_ppp')[0];
 Vue.component('my-headerp1',{
 template: '<p class="header_p1">{{headeros.headers1}}</p>'
 });
@@ -11,13 +11,13 @@ Vue.component('my-headerp2',{
 template: '<p class="header_p2">{{headeros.hesders1_1}}</p>'
 });
 pps.innerHTML = '<my-headerp1 id="headerp1"></my-headerp1> <my-headerp2 id="headerp2"></my-headerp2>'
-let vm7_1 = new Vue({
+var vm7_1 = new Vue({
 	el: "#headerp1"
 });
-let vm7_2 = new Vue({
+var vm7_2 = new Vue({
 	el: "#headerp2"
 });
-let newsdetailers = {
+var newsdetailers = {
 	newsdetailersImg1:'img/banner01.jpg',
 	newsdetailersLi: {
 		H4:'热烈祝贺创意快装工场在全球小企业股权交易中心挂牌',
@@ -37,31 +37,31 @@ let newsdetailers = {
 	newsdetailerspan1:'第一篇',
 	newsdetailerspan2:'热烈祝贺创意快装工场在全球小企业股权交易中心挂牌'
 };
-let Img7_1 = Vue.extend({
+var Img7_1 = Vue.extend({
 template: '<img class="img1" v-bind:src="newsdetailers.newsdetailersImg1"/>'
 });
-let h47_1 = Vue.extend({
+var h47_1 = Vue.extend({
 	template:'<h4>{{newsdetailers.newsdetailersLi.H4}}</h4>'
 });
-let ul7_1 = Vue.extend({
+var ul7_1 = Vue.extend({
 	template:'<ul><li v-for="newsdetailersx in newsdetailers.newsdetailersUl"><img v-bind:src="newsdetailersx.newsdetailersImg" />{{newsdetailersx.newsdetailerszuo}}<span>{{newsdetailersx.newsdetailersnei}}</span></li></ul>'
 });
-let p7_1 = Vue.extend({
+var p7_1 = Vue.extend({
 	template:'<p>{{newsdetailers.newsdetailersLi.P1}}</p>'
 });
-let p7_2 = Vue.extend({
+var p7_2 = Vue.extend({
 	template:'<p>{{newsdetailers.newsdetailersLi.P2}}</p>'
 });
-let p7_3 = Vue.extend({
+var p7_3 = Vue.extend({
 	template:'<p>{{newsdetailers.newsdetailersLi.P3}}</p>'
 });
-let Img7_2 = Vue.extend({
+var Img7_2 = Vue.extend({
 	template:'<img class="img2" v-bind:src="newsdetailers.newsdetailersLi.img1" />'
 });
-let Img7_3 = Vue.extend({
+var Img7_3 = Vue.extend({
 	template:'<img class="img2" v-bind:src="newsdetailers.newsdetailersLi.img2" />'
 });
-let div7_1 = Vue.extend({
+var div7_1 = Vue.extend({
 	template:'<div class="particulars_li"><child8></child8><child9></child9><child10></child10><child11></child11><child12></child12><child13></child13><child14></child14></div>',
 	components: {
 		'child8': h47_1,
@@ -73,22 +73,22 @@ let div7_1 = Vue.extend({
     	'child14': p7_3 	
 	}
 });
-let hr7_1 = Vue.extend({
+var hr7_1 = Vue.extend({
 	template:'<hr style="clear: both; border: none; border-bottom: 1px solid #dfdfdf;"/>'
 });
-let span7_1 = Vue.extend({
+var span7_1 = Vue.extend({
 	template:'<span>{{newsdetailers.newsdetailerspan1}}</span>'
 });
-let div7_2 = Vue.extend({
+var div7_2 = Vue.extend({
 	template:'<div class="particulars_tb particulars_top">上一篇：<child6></child6></div>',
 	components: {
 		'child6': span7_1
 	}　
 });
-let span7_2 = Vue.extend({
+var span7_2 = Vue.extend({
 	template:'<span>{{newsdetailers.newsdetailerspan2}}</span>'
 });
-let div7_3 = Vue.extend({
+var div7_3 = Vue.extend({
 	template:'<div class="particulars_tb particulars_bottom">下一篇：<child7></child7></div>',
 	components: {
 		'child7': span7_2
@@ -105,13 +105,13 @@ Vue.component('my-newsdetailers1',{
     'child5': div7_3
    }
 });
-let vm7_3 = new Vue({
+var vm7_3 = new Vue({
 	el: "#newsdetailer"
 });
 window.onload = function() {
 	   	//上一篇
-	   	let particulars_top = document.querySelector('.particulars_top span');
-	   	let particulars_bottom = document.querySelector('.particulars_bottom span');
+	   	var particulars_top = document.querySelector('.particulars_top span');
+	   	var particulars_bottom = document.querySelector('.particulars_bottom span');
 	   	particulars_top.onclick = function() {
 //	   		console.log(particulars_top.innerHTML);
 	   		if(particulars_top.innerHTML == '第一篇') {

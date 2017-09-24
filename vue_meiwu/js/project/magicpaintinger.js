@@ -1,9 +1,9 @@
 //头部显示
-let headeros = {
+var headeros = {
 	headers1:'魔画科技',
 	hesders1_1:'产品详情'
 };
-let pps = document.getElementsByClassName('header_ppp')[0];
+var pps = document.getElementsByClassName('header_ppp')[0];
 Vue.component('my-headerp1',{
 template: '<p class="header_p1">{{headeros.headers1}}</p>'
 });
@@ -11,13 +11,13 @@ Vue.component('my-headerp2',{
 template: '<p class="header_p2">{{headeros.hesders1_1}}</p>'
 });
 pps.innerHTML = '<my-headerp1 id="headerp1"></my-headerp1> <my-headerp2 id="headerp2"></my-headerp2>'
-let vm9_1 = new Vue({
+var vm9_1 = new Vue({
 	el: "#headerp1"
 });
-let vm9_2 = new Vue({
+var vm9_2 = new Vue({
 	el: "#headerp2"
 });
-let magicpaintingers = {
+var magicpaintingers = {
 	magicpaintingersImg1:'img/banner04.jpg',
 	magicpaintingersLi: {
 		H4:'魔画世界工场，“金”爆2017年财富冲击波',
@@ -64,40 +64,40 @@ let magicpaintingers = {
 				}
 	]
 };
-let Img9_1 = Vue.extend({
+var Img9_1 = Vue.extend({
 template: '<img class="img12" v-bind:src="magicpaintingers.magicpaintingersImg1"/>'
 });
-let h49_1 = Vue.extend({
+var h49_1 = Vue.extend({
 	template:'<h4>{{magicpaintingers.magicpaintingersLi.H4}}</h4>'
 });
-let h59_1 = Vue.extend({
+var h59_1 = Vue.extend({
 	template:'<h5>{{magicpaintingers.magicpaintingersLi.H5_1}}</h5>'
 });
-let h59_2 = Vue.extend({
+var h59_2 = Vue.extend({
 	template:'<h5>{{magicpaintingers.magicpaintingersLi.H5_2}}</h5>'
 });
-let h59_3 = Vue.extend({
+var h59_3 = Vue.extend({
 	template:'<h5>{{magicpaintingers.magicpaintingersLi.H5_3}}</h5>'
 });
-let p9_1 = Vue.extend({
+var p9_1 = Vue.extend({
 	template:'<p>{{magicpaintingers.magicpaintingersLi.P1}}</p>'
 });
-let p9_2 = Vue.extend({
+var p9_2 = Vue.extend({
 	template:'<p>{{magicpaintingers.magicpaintingersLi.P2}}</p>'
 });
-let p9_3 = Vue.extend({
+var p9_3 = Vue.extend({
 	template:'<p>{{magicpaintingers.magicpaintingersLi.P3}}</p>'
 });
-let Img9_2 = Vue.extend({
+var Img9_2 = Vue.extend({
 	template:'<img v-bind:src="magicpaintingers.magicpaintingersLi.img1" />'
 });
-let Img9_3 = Vue.extend({
+var Img9_3 = Vue.extend({
 	template:'<img v-bind:src="magicpaintingers.magicpaintingersLi.img2" />'
 });
-let Img9_4 = Vue.extend({
+var Img9_4 = Vue.extend({
 	template:'<img v-bind:src="magicpaintingers.magicpaintingersLi.img3" />'
 });
-let div9_1 = Vue.extend({
+var div9_1 = Vue.extend({
 	template:'<div class="particulars_li project_div"><child5></child5><child6></child6><child7></child7><child8></child8><child9></child9><child10></child10><child11></child11><child12></child12><child13></child13><child14></child14></div>',
 	components: {
 		'child5': h49_1,
@@ -112,10 +112,10 @@ let div9_1 = Vue.extend({
     	'child14': h59_3
 	}
 });
-let ul9_1 = Vue.extend({
+var ul9_1 = Vue.extend({
 	template:'<ul><li v-for="magicpaintingersx in magicpaintingers.magicpaintingersDiv"><div class="project_xdiv">{{magicpaintingersx.magicpaintingersName}}</div><div class="particulars_li project_xli"><h4>{{magicpaintingersx.h0}}</h4><p>{{magicpaintingersx.p1}}</p><img v-bind:src="magicpaintingersx.img1"/><img v-bind:src="magicpaintingersx.img2"/><img v-bind:src="magicpaintingersx.img3"/><img v-bind:src="magicpaintingersx.img4"/><img v-bind:src="magicpaintingersx.img5"/></div></li></ul>'
 });
-let div9_2 = Vue.extend({
+var div9_2 = Vue.extend({
 	template:'<div class="project_x"><child4></child4></div>',
 	components: {
 		'child4': ul9_1
@@ -130,6 +130,6 @@ Vue.component('my-magicpaintingers1',{
     'child3': div9_2
    }
 });
-let vm9_3 = new Vue({
+var vm9_3 = new Vue({
 	el: "#magicpaintinger"
 });

@@ -1,9 +1,9 @@
 //头部显示
-let headeros = {
+var headeros = {
 	headers1:'玻璃空间',
 	hesders1_1:'产品详情'
 };
-let pps = document.getElementsByClassName('header_ppp')[0];
+var pps = document.getElementsByClassName('header_ppp')[0];
 Vue.component('my-headerp1',{
 template: '<p class="header_p1">{{headeros.headers1}}</p>'
 });
@@ -11,13 +11,13 @@ Vue.component('my-headerp2',{
 template: '<p class="header_p2">{{headeros.hesders1_1}}</p>'
 });
 pps.innerHTML = '<my-headerp1 id="headerp1"></my-headerp1> <my-headerp2 id="headerp2"></my-headerp2>'
-let vm10_1 = new Vue({
+var vm10_1 = new Vue({
 	el: "#headerp1"
 });
-let vm10_2 = new Vue({
+var vm10_2 = new Vue({
 	el: "#headerp2"
 });
-let glasspacers = {
+var glasspacers = {
 	glasspacersImg1:'img/banner04.jpg',
 	glasspacersLi: {
 		H4:'玻艺世界工坊，玻璃装饰行业的新贵',
@@ -133,37 +133,37 @@ let glasspacers = {
 				}				
 	]
 };
-let Img10_1 = Vue.extend({
+var Img10_1 = Vue.extend({
 template: '<img class="img12" v-bind:src="glasspacers.glasspacersImg1"/>'
 });
-let h410_1 = Vue.extend({
+var h410_1 = Vue.extend({
 	template:'<h4>{{glasspacers.glasspacersLi.H4}}</h4>'
 });
-let h510_1 = Vue.extend({
+var h510_1 = Vue.extend({
 	template:'<h5>{{glasspacers.glasspacersLi.H5_1}}</h5>'
 });
-let h510_2 = Vue.extend({
+var h510_2 = Vue.extend({
 	template:'<h5>{{glasspacers.glasspacersLi.H5_2}}</h5>'
 });
-let h510_3 = Vue.extend({
+var h510_3 = Vue.extend({
 	template:'<h5>{{glasspacers.glasspacersLi.H5_3}}</h5>'
 });
-let p10_1 = Vue.extend({
+var p10_1 = Vue.extend({
 	template:'<p>{{glasspacers.glasspacersLi.P1}}</p>'
 });
-let p10_2 = Vue.extend({
+var p10_2 = Vue.extend({
 	template:'<p>{{glasspacers.glasspacersLi.P2}}</p>'
 });
-let p10_3 = Vue.extend({
+var p10_3 = Vue.extend({
 	template:'<p>{{glasspacers.glasspacersLi.P3}}</p>'
 });
-let p10_4 = Vue.extend({
+var p10_4 = Vue.extend({
 	template:'<p>{{glasspacers.glasspacersLi.P4}}</p>'
 });
-let p10_5 = Vue.extend({
+var p10_5 = Vue.extend({
 	template:'<p>{{glasspacers.glasspacersLi.P5}}</p>'
 });
-let div10_1 = Vue.extend({
+var div10_1 = Vue.extend({
 	template:'<div class="particulars_li project_div"><child5></child5><child6></child6><child7></child7><child8></child8><child9></child9><child10></child10><child11></child11><child12></child12><child13></child13></div>',
 	components: {
 		'child5': h410_1,
@@ -177,10 +177,10 @@ let div10_1 = Vue.extend({
     	'child13': h510_3
 	}
 });
-let ul10_1 = Vue.extend({
+var ul10_1 = Vue.extend({
 	template:'<ul><li v-for="glasspacersx in glasspacers.glasspacersDiv"><div class="project_xdiv">{{glasspacersx.glasspacersName}}</div><div class="particulars_li project_xli"><h4>{{glasspacersx.h0}}</h4><p>{{glasspacersx.p1}}</p><img v-bind:src="glasspacersx.img1"/><img v-bind:src="glasspacersx.img2"/><img v-bind:src="glasspacersx.img3"/><img v-bind:src="glasspacersx.img4"/><img v-bind:src="glasspacersx.img5"/></div></li></ul>'
 });
-let div10_2 = Vue.extend({
+var div10_2 = Vue.extend({
 	template:'<div class="project_x"><child4></child4></div>',
 	components: {
 		'child4': ul10_1
@@ -195,6 +195,6 @@ Vue.component('my-glasspacers1',{
     'child3': div10_2
    }
 });
-let vm10_3 = new Vue({
+var vm10_3 = new Vue({
 	el: "#glasspacer"
 });

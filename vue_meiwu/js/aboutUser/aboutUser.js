@@ -1,9 +1,9 @@
 //头部显示
-let headeros = {
+var headeros = {
 	headers1:'关于我们',
 	hesders1_1:'公司内容'
 };
-let pps = document.getElementsByClassName('header_ppp')[0];
+var pps = document.getElementsByClassName('header_ppp')[0];
 Vue.component('my-headerp1',{
 template: '<p class="header_p1">{{headeros.headers1}}</p>'
 });
@@ -11,13 +11,13 @@ Vue.component('my-headerp2',{
 template: '<p class="header_p2">{{headeros.hesders1_1}}</p>'
 });
 pps.innerHTML = '<my-headerp1 id="headerp1"></my-headerp1> <my-headerp2 id="headerp2"></my-headerp2>'
-let vm6_1 = new Vue({
+var vm6_1 = new Vue({
 	el: "#headerp1"
 });
-let vm6_2 = new Vue({
+var vm6_2 = new Vue({
 	el: "#headerp2"
 });
-let aboutUsers = {
+var aboutUsers = {
 	aboutUsersImg1:'img/banner02.jpg',
 	aboutUsersLi: {
 		H4:'宋庄创意工场，开启美屋定制快装时代',
@@ -94,40 +94,40 @@ let aboutUsers = {
 				}				
 	]
 };
-let Img6_1 = Vue.extend({
+var Img6_1 = Vue.extend({
 template: '<img class="img12" v-bind:src="aboutUsers.aboutUsersImg1"/>'
 });
-let h46_1 = Vue.extend({
+var h46_1 = Vue.extend({
 	template:'<h4>{{aboutUsers.aboutUsersLi.H4}}</h4>'
 });
-let h56_1 = Vue.extend({
+var h56_1 = Vue.extend({
 	template:'<h5>{{aboutUsers.aboutUsersLi.H5_1}}</h5>'
 });
-let h56_2 = Vue.extend({
+var h56_2 = Vue.extend({
 	template:'<h5>{{aboutUsers.aboutUsersLi.H5_2}}</h5>'
 });
-let p6_1 = Vue.extend({
+var p6_1 = Vue.extend({
 	template:'<p>{{aboutUsers.aboutUsersLi.P1}}</p>'
 });
-let p6_2 = Vue.extend({
+var p6_2 = Vue.extend({
 	template:'<p>{{aboutUsers.aboutUsersLi.P2}}</p>'
 });
-let p6_3 = Vue.extend({
+var p6_3 = Vue.extend({
 	template:'<p>{{aboutUsers.aboutUsersLi.P3}}</p>'
 });
-let p6_4 = Vue.extend({
+var p6_4 = Vue.extend({
 	template:'<p>{{aboutUsers.aboutUsersLi.P4}}</p>'
 });
-let Img6_2 = Vue.extend({
+var Img6_2 = Vue.extend({
 	template:'<img v-bind:src="aboutUsers.aboutUsersLi.img1" />'
 });
-let Img6_3 = Vue.extend({
+var Img6_3 = Vue.extend({
 	template:'<img v-bind:src="aboutUsers.aboutUsersLi.img2" />'
 });
-let Img6_4 = Vue.extend({
+var Img6_4 = Vue.extend({
 	template:'<img v-bind:src="aboutUsers.aboutUsersLi.img3" />'
 });
-let div6_1 = Vue.extend({
+var div6_1 = Vue.extend({
 	template:'<div class="particulars_li project_div"><child5></child5><child6></child6><child7></child7><child8></child8><child9></child9><child10></child10><child11></child11><child12></child12><child13></child13><child14></child14></div>',
 	components: {
 		'child5': h46_1,
@@ -142,10 +142,10 @@ let div6_1 = Vue.extend({
     	'child14': Img6_4  	
 	}
 });
-let ul6_1 = Vue.extend({
+var ul6_1 = Vue.extend({
 	template:'<ul><li v-for="aboutUsersx in aboutUsers.aboutUsersDiv"><div class="project_xdiv">{{aboutUsersx.aboutUsersName}}</div><div class="particulars_li project_xli"><h4>{{aboutUsersx.h0}}</h4><h5>{{aboutUsersx.h1}}</h5><p>{{aboutUsersx.p1}}</p><img v-bind:src="aboutUsersx.img1"/><h5>{{aboutUsersx.h2}}</h5><p>{{aboutUsersx.p2}}</p><img v-bind:src="aboutUsersx.img2"/><h5>{{aboutUsersx.h3}}</h5><p>{{aboutUsersx.p3}}</p><img v-bind:src="aboutUsersx.img3"/><h5>{{aboutUsersx.h4}}</h5><p>{{aboutUsersx.p4}}</p><img v-bind:src="aboutUsersx.img4"/><h5>{{aboutUsersx.h5}}</h5><p>{{aboutUsersx.p5}}</p><h5>{{aboutUsersx.h6}}</h5><p>{{aboutUsersx.p6}}</p></div></li></ul>'
 });
-let div6_2 = Vue.extend({
+var div6_2 = Vue.extend({
 	template:'<div class="project_x"><child4></child4></div>',
 	components: {
 		'child4': ul6_1
@@ -160,6 +160,6 @@ Vue.component('my-aboutusers1',{
     'child3': div6_2
    }
 });
-let vm6_3 = new Vue({
+var vm6_3 = new Vue({
 	el: "#aboutuser"
 });

@@ -1,27 +1,27 @@
 //头部组件
-let Img1 = Vue.extend({
+var Img1 = Vue.extend({
 template: "<img class='header_i1' src='img/logo.png'/>"
 });
 //var locals = false;
-let Img2 = Vue.extend({
+var Img2 = Vue.extend({
 template: '<img v-on:click="local" class="header_i2" style="top: 2.3%" src="img/IMG_0597.PNG"/>',
 methods: {
-		local() {
+		local: function() {
 			vm2.locals1 = true;
 			vm3.locals2 = true;	
 		}
 	}
 });
 //搜索框的获取
-let worder = '';
-let input1 = Vue.extend({
+var worder = '';
+var input1 = Vue.extend({
 template: '<input v-model="worder" type="text" placeholder="请输入新闻关键字" class="word"/>'
 });
 //导航栏的显示隐藏
-let button1 = Vue.extend({
+var button1 = Vue.extend({
 template: '<button v-on:click="worders" class="btnsss" ><img src="img/search.png"/><span>搜索</span></button>',
 methods: {
-		worders() {
+		worders: function() {
 			if(worder == "") {
 				alert("请输入搜索关键字！");
 				return false;
@@ -31,7 +31,7 @@ methods: {
 		}
 	}
 });
-let seek1 = Vue.extend({
+var seek1 = Vue.extend({
 template: '<div class="seek"><child4></child4><child5></child5></div>',
  components: {
     // <my-component> 将只在父模板可用
@@ -39,7 +39,7 @@ template: '<div class="seek"><child4></child4><child5></child5></div>',
     'child5': button1
    }
 });
-let ppp1 = Vue.extend({
+var ppp1 = Vue.extend({
 template: '<div class="header_ppp"></div>'
 });
  Vue.component('my-header',{
@@ -52,7 +52,7 @@ template: '<div class="header_ppp"></div>'
     'child3': seek1
    }
 });
-let vm1 = new Vue({
+var vm1 = new Vue({
 	el: "#headers"
 //	data: {locals: false},
 //	methods: {
@@ -68,13 +68,13 @@ let vm1 = new Vue({
 Vue.component('my-head01',{
      template: '<div v-on:click="headers01" class="header_l1"></div>',
     methods: {
-		headers01() {
+		headers01: function() {
 			vm2.locals1 = false;
 			vm3.locals2 = false;
 		}
 	}
 });
-let vm2 = new Vue({
+var vm2 = new Vue({
 	el: "#headers01",
 	data: {locals1: false},
 //	methods: {
@@ -87,7 +87,7 @@ let vm2 = new Vue({
 //		}
 //	}
 });
-let navers = [
+var navers = [
 				{id:'icon1',catalogue: 'index.html',names:'首页'},
 				{id:'icon2',catalogue: 'new.html',names:'新闻资讯'},
 				{id:'icon3',catalogue: 'project.html',names:'产品系列'},
@@ -96,7 +96,7 @@ let navers = [
 				{id:'icon6',catalogue: 'about_cooperation.html',names:'诚约合作'},
 				{id:'icon7',catalogue: 'about_us.html',names:'关于我们'}
 			 ];
-let ul1 = Vue.extend({
+var ul1 = Vue.extend({
 template: "<ul><li v-for='naver in navers'><a v-bind:href='naver.catalogue'><div class='ico1' v-bind:class='naver.id'></div><span>{{naver.names}}</span></a></li></ul>"
 });
 Vue.component('my-head02',{
@@ -106,13 +106,13 @@ Vue.component('my-head02',{
     'child1': ul1
    },
     methods: {
-		headers02() {
+		headers02: function() {
 			vm2.locals1 = false;
 			vm3.locals2 = false;
 		}
 	}
 });
-let vm3 = new Vue({
+var vm3 = new Vue({
 	el: "#headers02",
 	data: {locals2: false}
 });
