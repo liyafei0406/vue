@@ -10,7 +10,8 @@ html {
 	font-size: 100%
 }
 body {
-	font-size: 1em
+	font-size: 1em;
+	position: relative;
 }
 title {
 	text-align: center
@@ -19,7 +20,6 @@ title {
 .bg {
 	width: 100%;
 	/*background-color: #efeff5*/
-	position: relative;
 }
 /*头部*/
 .header {
