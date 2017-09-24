@@ -19,6 +19,7 @@ title {
 .bg {
 	width: 100%;
 	/*background-color: #efeff5*/
+	position: relative;
 }
 /*头部*/
 .header {
