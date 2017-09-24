@@ -1,4 +1,4 @@
-let marketAdvantages = {
+var marketAdvantages = {
 	marketAdvantages1: "market_analysis.html?numb2=1",
 	imgs1: "img/rightjt.png",
 	marketAdvantagesbiao: "市场优势",
@@ -10,25 +10,25 @@ let marketAdvantages = {
 				{marketsImg:'img/sc004.jpg',marketsName:'商装市场',marketsDetails:'为商家门店装修提供主题定制！'},
 	]
 };
-let img4 = Vue.extend({
+var img4 = Vue.extend({
 template: '<img style="width: 5%;" class="more" v-bind:src="marketAdvantages.imgs1" alt="图片错误"/>'
 });
-let a3 = Vue.extend({
+var a3 = Vue.extend({
 template: '<a v-bind:href="marketAdvantages.marketAdvantages1">{{marketAdvantages.marketAdvantagesbiao}}<child5></child5></a>',
  components: {
     'child5': img4
    }
 });
-let p3 = Vue.extend({
+var p3 = Vue.extend({
 template: '<p class="in_h"><child4></child4></p>',
  components: {
     'child4': a3
    }
 });
-let hr3 = Vue.extend({
+var hr3 = Vue.extend({
 template: '<hr style="clear: both; border: none; border-bottom: 1px solid #dfdfdf; margin-bottom: 10px;" />'
 });
-let ul5 = Vue.extend({
+var ul5 = Vue.extend({
 template: "<ul><li v-for='markets2 in marketAdvantages.marketAdvantages2_2'><a v-bind:href='marketAdvantages.marketAdvantages2_1'><img v-bind:src='markets2.marketsImg'/><h2>{{markets2.marketsName}}</h2><p>{{markets2.marketsDetails}}</p></a></li></ul>"
 });
 Vue.component('my-markets1',{
@@ -40,6 +40,6 @@ Vue.component('my-markets1',{
     
    }
 });
-let vm7 = new Vue({
+var vm7 = new Vue({
 	el: "#marketAdvantage"
 });

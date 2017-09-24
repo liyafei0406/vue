@@ -1,9 +1,9 @@
 //头部显示
-let headeros = {
+var headeros = {
 	headers1:'集成墙饰',
 	hesders1_1:'产品详情'
 };
-let pps = document.getElementsByClassName('header_ppp')[0];
+var pps = document.getElementsByClassName('header_ppp')[0];
 Vue.component('my-headerp1',{
 template: '<p class="header_p1">{{headeros.headers1}}</p>'
 });
@@ -11,13 +11,13 @@ Vue.component('my-headerp2',{
 template: '<p class="header_p2">{{headeros.hesders1_1}}</p>'
 });
 pps.innerHTML = '<my-headerp1 id="headerp1"></my-headerp1> <my-headerp2 id="headerp2"></my-headerp2>'
-let vm8_1 = new Vue({
+var vm8_1 = new Vue({
 	el: "#headerp1"
 });
-let vm8_2 = new Vue({
+var vm8_2 = new Vue({
 	el: "#headerp2"
 });
-let integrateders = {
+var integrateders = {
 	integratedersImg1:'img/banner04.jpg',
 	integratedersLi: {
 		H4:'新奇特快智能养生快装',
@@ -137,49 +137,49 @@ let integrateders = {
 				}				
 	]
 };
-let Img8_1 = Vue.extend({
+var Img8_1 = Vue.extend({
 template: '<img class="img12" v-bind:src="integrateders.integratedersImg1"/>'
 });
-let h48_1 = Vue.extend({
+var h48_1 = Vue.extend({
 	template:'<h4>{{integrateders.integratedersLi.H4}}</h4>'
 });
-let h58_1 = Vue.extend({
+var h58_1 = Vue.extend({
 	template:'<h5>{{integrateders.integratedersLi.H5_1}}</h5>'
 });
-let h58_2 = Vue.extend({
+var h58_2 = Vue.extend({
 	template:'<h5>{{integrateders.integratedersLi.H5_2}}</h5>'
 });
-let h58_3 = Vue.extend({
+var h58_3 = Vue.extend({
 	template:'<h5>{{integrateders.integratedersLi.H5_3}}</h5>'
 });
-let h58_4 = Vue.extend({
+var h58_4 = Vue.extend({
 	template:'<h5>{{integrateders.integratedersLi.H5_4}}</h5>'
 });
-let h58_5 = Vue.extend({
+var h58_5 = Vue.extend({
 	template:'<h5>{{integrateders.integratedersLi.H5_5}}</h5>'
 });
-let p8_1 = Vue.extend({
+var p8_1 = Vue.extend({
 	template:'<p>{{integrateders.integratedersLi.P1}}</p>'
 });
-let p8_2 = Vue.extend({
+var p8_2 = Vue.extend({
 	template:'<p>{{integrateders.integratedersLi.P2}}</p>'
 });
-let p8_3 = Vue.extend({
+var p8_3 = Vue.extend({
 	template:'<p>{{integrateders.integratedersLi.P3}}</p>'
 });
-let p8_4 = Vue.extend({
+var p8_4 = Vue.extend({
 	template:'<p>{{integrateders.integratedersLi.P4}}</p>'
 });
-let p8_5 = Vue.extend({
+var p8_5 = Vue.extend({
 	template:'<p>{{integrateders.integratedersLi.P5}}</p>'
 });
-let p8_6 = Vue.extend({
+var p8_6 = Vue.extend({
 	template:'<p>{{integrateders.integratedersLi.P6}}</p>'
 });
-let Img8_2 = Vue.extend({
+var Img8_2 = Vue.extend({
 	template:'<img v-bind:src="integrateders.integratedersLi.img1" />'
 });
-let div8_1 = Vue.extend({
+var div8_1 = Vue.extend({
 	template:'<div class="particulars_li project_div"><child5></child5><child6></child6><child7></child7><child8></child8><child9></child9><child10></child10><child11></child11><child12></child12><child13></child13><child14></child14><child15></child15><child16></child16><child17></child17></div>',
 	components: {
 		'child5': h48_1,
@@ -197,10 +197,10 @@ let div8_1 = Vue.extend({
     	'child17': p8_6
 	}
 });
-let ul8_1 = Vue.extend({
+var ul8_1 = Vue.extend({
 	template:'<ul><li v-for="integratedersx in integrateders.integratedersDiv"><div class="project_xdiv">{{integratedersx.integratedersName}}</div><div class="particulars_li project_xli"><h4>{{integratedersx.h0}}</h4><p>{{integratedersx.p1}}</p><img v-bind:src="integratedersx.img1"/><img v-bind:src="integratedersx.img2"/><img v-bind:src="integratedersx.img3"/><img v-bind:src="integratedersx.img4"/><img v-bind:src="integratedersx.img5"/></div></li></ul>'
 });
-let div8_2 = Vue.extend({
+var div8_2 = Vue.extend({
 	template:'<div class="project_x"><child4></child4></div>',
 	components: {
 		'child4': ul8_1
@@ -215,6 +215,6 @@ Vue.component('my-integrateders1',{
     'child3': div8_2
    }
 });
-let vm8_3 = new Vue({
+var vm8_3 = new Vue({
 	el: "#integrateder"
 });

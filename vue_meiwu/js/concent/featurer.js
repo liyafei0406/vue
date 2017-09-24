@@ -1,4 +1,4 @@
-let featurers = {
+var featurers = {
 	featurers1: "project_introduction.html?numb1=0",
 	featurersbiao: "产品优势",
 	imgs1: "img/rightjt.png",
@@ -16,38 +16,38 @@ let featurers = {
 		{featurersImg:'img/art01.png',featurersName:'绿色环保',featurersDetails:'采用纯天然环保材料，无甲醛、无异味，当天安装好，当天即可入住；'}
 	]
 };
-let img6 = Vue.extend({
+var img6 = Vue.extend({
 template: '<img style="width: 5%;" class="more" v-bind:src="featurers.imgs1" alt="图片错误"/>'
 });
-let a5 = Vue.extend({
+var a5 = Vue.extend({
 template: '<a v-bind:href="featurers.featurers1">{{featurers.featurersbiao}}<child5></child5></a>',
  components: {
     'child5': img6
    }
 });
-let p6 = Vue.extend({
+var p6 = Vue.extend({
 template: '<p class="in_h"><child4></child4></p>',
  components: {
     'child4': a5
    }
 });
-let hr6 = Vue.extend({
+var hr6 = Vue.extend({
 template: '<hr style="clear: both; border: none; border-bottom: 1px solid #dfdfdf; margin-bottom: 10px;" />'
 });
-let ul7 = Vue.extend({
+var ul7 = Vue.extend({
 template: "<ul><li v-for='featurerser in featurers.featurers2_2'><a v-bind:href='featurers.featurers2_1'><img v-bind:src='featurerser.featurersImg'/><div class='feature_dl'><p>{{featurerser.featurersName}}</p><p>{{featurerser.featurersDetails}}</p></div></a></li></ul>"
 });
-let img7 = Vue.extend({
+var img7 = Vue.extend({
 template: '<img class="brand_i01" v-bind:src="featurers.imgs2" alt="图片错误"/>'
 });
 
-let div3 = Vue.extend({
+var div3 = Vue.extend({
 template: '<div></div>'
 });
-let img8 = Vue.extend({
+var img8 = Vue.extend({
 template: '<img class="brand_i02" v-bind:src="featurers.imgs1" alt="图片错误"/>'
 });
-let div2 = Vue.extend({
+var div2 = Vue.extend({
 template: '<div class="brand_lr"><child7></child7><child8 v-for="item101 in featurers.featurers2_2.length"></child8><child9></child9></div>',
  components: {
     'child7': img7,
@@ -65,6 +65,6 @@ Vue.component('my-feature1',{
     
    }
 });
-let vm10 = new Vue({
+var vm10 = new Vue({
 	el: "#featurer"
 });

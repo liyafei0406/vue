@@ -1,9 +1,9 @@
 //头部显示
-let headeros = {
+var headeros = {
 	headers1:'项目介绍',
 	hesders1_1:'项目内容'
 };
-let pps = document.getElementsByClassName('header_ppp')[0];
+var pps = document.getElementsByClassName('header_ppp')[0];
 Vue.component('my-headerp1',{
 template: '<p class="header_p1">{{headeros.headers1}}</p>'
 });
@@ -11,13 +11,13 @@ Vue.component('my-headerp2',{
 template: '<p class="header_p2">{{headeros.hesders1_1}}</p>'
 });
 pps.innerHTML = '<my-headerp1 id="headerp1"></my-headerp1> <my-headerp2 id="headerp2"></my-headerp2>'
-let vm3_1 = new Vue({
+var vm3_1 = new Vue({
 	el: "#headerp1"
 });
-let vm3_2 = new Vue({
+var vm3_2 = new Vue({
 	el: "#headerp2"
 });
-let introductioners = {
+var introductioners = {
 	introductionersImg1:'img/banner03.jpg',
 	introductionersLi: {
 		H4:'美屋定制 • 智能养生快装馆',
@@ -109,25 +109,25 @@ let introductioners = {
 				}
 	]
 };
-let Img3_1 = Vue.extend({
+var Img3_1 = Vue.extend({
 template: '<img class="img12" v-bind:src="introductioners.introductionersImg1"/>'
 });
-let h43_1 = Vue.extend({
+var h43_1 = Vue.extend({
 	template:'<h4>{{introductioners.introductionersLi.H4}}</h4>'
 });
-let p3_1 = Vue.extend({
+var p3_1 = Vue.extend({
 	template:'<p>{{introductioners.introductionersLi.P1}}</p>'
 });
-let p3_2 = Vue.extend({
+var p3_2 = Vue.extend({
 	template:'<p>{{introductioners.introductionersLi.P2}}</p>'
 });
-let Img3_2 = Vue.extend({
+var Img3_2 = Vue.extend({
 	template:'<img v-bind:src="introductioners.introductionersLi.img1" />'
 });
-let Img3_3 = Vue.extend({
+var Img3_3 = Vue.extend({
 	template:'<img v-bind:src="introductioners.introductionersLi.img2" />'
 });
-let div3_1 = Vue.extend({
+var div3_1 = Vue.extend({
 	template:'<div class="particulars_li project_div"><child5></child5><child6></child6><child7></child7><child8></child8><child9></child9></div>',
 	components: {
 		'child5': h43_1,
@@ -137,10 +137,10 @@ let div3_1 = Vue.extend({
     	'child9': Img3_3
 	}
 });
-let ul3_1 = Vue.extend({
+var ul3_1 = Vue.extend({
 	template:'<ul><li v-for="introductionersx in introductioners.introductionersDiv"><div class="project_xdiv">{{introductionersx.introductionersName}}</div><div class="particulars_li project_xli"><h4>{{introductionersx.h0}}</h4><h5>{{introductionersx.h1}}</h5><p>{{introductionersx.p1}}</p><img v-bind:src="introductionersx.img1"/><h5>{{introductionersx.h2}}</h5><p>{{introductionersx.p2}}</p><img v-bind:src="introductionersx.img2"/><h5>{{introductionersx.h3}}</h5><p>{{introductionersx.p3}}</p><img v-bind:src="introductionersx.img3"/><h5>{{introductionersx.h4}}</h5><p>{{introductionersx.p4}}</p><img v-bind:src="introductionersx.img4"/><h5>{{introductionersx.h5}}</h5><p>{{introductionersx.p5}}</p><h5>{{introductionersx.h6}}</h5><p>{{introductionersx.p6}}</p></div></li></ul>'
 });
-let div3_2 = Vue.extend({
+var div3_2 = Vue.extend({
 	template:'<div class="project_x"><child4></child4></div>',
 	components: {
 		'child4': ul3_1
@@ -155,32 +155,32 @@ Vue.component('my-introductioners1',{
     'child3': div3_2
    }
 });
-let vm3_3 = new Vue({
+var vm3_3 = new Vue({
 	el: "#introductioner"
 });
 //根据QueryString参数名称获取值
 function getQueryStringByName(name) {
-    let result = location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
+    var result = location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
     if (result == null || result.length < 1) {
         return "";
     };
     return result[1];
 };
 //document.ready = function() {
-		let numb1 = decodeURI(getQueryStringByName('numb1'));
+		var numb1 = decodeURI(getQueryStringByName('numb1'));
 //		console.log(typeof numb1);
-		let projecters_xx = document.querySelectorAll('.project_x li');
-		let projecters_div = document.getElementsByClassName('project_div')[0];
-		let projecters_xli = document.getElementsByClassName('project_xli');
+		var projecters_xx = document.querySelectorAll('.project_x li');
+		var projecters_div = document.getElementsByClassName('project_div')[0];
+		var projecters_xli = document.getElementsByClassName('project_xli');
 		if(numb1 === '0') {
 		   projecters_div.style.display = 'none';	
-		 	for(let i = 0; i < projecters_xx.length; i ++) {
+		 	for(var i = 0; i < projecters_xx.length; i ++) {
 		 		projecters_xli[i].style.display = 'none';
 		 	};
 		 	projecters_xli[numb1].style.display = 'block';
 		}else if(numb1 === '3') {
 			 projecters_div.style.display = 'none';	
-		 	for(let i = 0; i < projecters_xx.length; i ++) {
+		 	for(var i = 0; i < projecters_xx.length; i ++) {
 		 		projecters_xli[i].style.display = 'none';
 		 	};
 		 	projecters_xli[numb1].style.display = 'block';

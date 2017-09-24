@@ -1,5 +1,5 @@
  //新闻详情
-let newers = {
+var newers = {
 	newersImg1:'img/news.gif',
 	newers1: {
 		newers1Site:'news_details.html',
@@ -15,24 +15,24 @@ let newers = {
 	newsNum:10
 	
 }
-let headeros = {
+var headeros = {
 	headers1:'新闻资讯',
 	hesders1_1:'公司新闻'
 };
-let Img1_1 = Vue.extend({
+var Img1_1 = Vue.extend({
 template: '<img class="news_img1" v-bind:src="newers.newersImg1"/>'
 });
-let div1_3 = Vue.extend({
+var div1_3 = Vue.extend({
 template: '<div class="news_ul"></div>'
 });
 //console.log(ul1_1.template);
-let Img1_2 = Vue.extend({
+var Img1_2 = Vue.extend({
 template: '<img style="margin-top: 10px; width: 30%; margin-left: 30%; display: block;" v-bind:src="newers.newersImg2"/>'
 });
-let p1_1 = Vue.extend({
+var p1_1 = Vue.extend({
 template: '<p style="margin:10px 0 10px 35%;width: 100%; font-size: 0.8rem;">{{newers.newersP}}</p>'
 });
-let div1_2 = Vue.extend({
+var div1_2 = Vue.extend({
 template: '<div class="news_xiao"><child5></child5><child6></child6></div>',
  components: {
     // <my-component> 将只在父模板可用
@@ -40,7 +40,7 @@ template: '<div class="news_xiao"><child5></child5><child6></child6></div>',
     'child6': p1_1
    }
 });
-let div1_1 = Vue.extend({
+var div1_1 = Vue.extend({
 template: '<div class="news_centre"><child3></child3><child4></child4></div>',
  components: {
     // <my-component> 将只在父模板可用
@@ -56,7 +56,7 @@ template: '<div class="news_centre"><child3></child3><child4></child4></div>',
     'child2': div1_1
    }
 });
-let vm1_1 = new Vue({
+var vm1_1 = new Vue({
 	el: "#newers"
 //	data: {locals: false},
 //	methods: {
@@ -74,38 +74,38 @@ function createLi() {
 Vue.component('my-lis1',{
 template: '<ul><li v-for="item0 in newers.newsNum"><a v-bind:href="newers.newers1.newers1Site"><div class="centre_d1"><img v-bind:src="newers.newers1.newers1Img3" /></div><div class="centre_d2"><h5>{{newers.newers1.newers1H5}}</h5><p class="centre_p3">{{newers.newers1.newers1P}}</p><p class="centre_p1"><img v-bind:src="newers.newers1.newers1Img1" />阅读：<span>{{newers.newers1.newers1Ci}}</span>次</p>&nbsp;&nbsp;|<p class="centre_p2">点击查看 <img v-bind:src="newers.newers1.newers1Img2" /></p></div></a></li></ul>'
 });
-let lis01 = '<my-lis1 id="lis1"></my-lis1>';
-let centrehAiv = document.querySelector('.news_centre .news_ul'); 
+var lis01 = '<my-lis1 id="lis1"></my-lis1>';
+var centrehAiv = document.querySelector('.news_centre .news_ul'); 
 centrehAiv.innerHTML = lis01;
-let vm1_2 = new Vue({
+var vm1_2 = new Vue({
 	el: "#lis1"
 });
 };
 createLi();
 var bol = true;
      document.ready = function() {
-    let word = decodeURI(getQueryStringByName('word'));
-    let worders = document.getElementsByClassName('word')[0];
+    var word = decodeURI(getQueryStringByName('word'));
+    var worders = document.getElementsByClassName('word')[0];
     worders.value = word;
-    let centreh = document.querySelector('.centre_d2 h5'); 
-	let biao =  centreh.innerHTML;
+    var centreh = document.querySelector('.centre_d2 h5'); 
+	var biao =  centreh.innerHTML;
 //	console.log(word);
-	let worder1 = biao.replace(new RegExp(word,"gm"),"<span style='color: red;' >"+word+"</span>");
+	var worder1 = biao.replace(new RegExp(word,"gm"),"<span style='color: red;' >"+word+"</span>");
 //	console.log(worder1);
 	centreh.innerHTML = worder1;
- 	let centrehs = document.querySelector('.centre_d2 h5 span'); 
+ 	var centrehs = document.querySelector('.centre_d2 h5 span'); 
     if(centrehs != null) {
     	return true;
     }else {
-    	let centrehUl = document.querySelector('.news_centre .news_ul'); 
-    	let newsXiao = document.getElementsByClassName('news_xiao')[0];
+    	var centrehUl = document.querySelector('.news_centre .news_ul'); 
+    	var newsXiao = document.getElementsByClassName('news_xiao')[0];
     	centrehUl.style.display = 'none';
     	newsXiao.style.display = 'block';
     	bol = false;
     };
     //根据QueryString参数名称获取值
 function getQueryStringByName(name) {
-    let result = location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
+    var result = location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
     if (result == null || result.length < 1) {
         return "";
     };
@@ -116,13 +116,13 @@ window.onload = function() {
      //窗口滚动时在特定条件下去触发创建li的函数
 		window.onscroll = function() {
 			//获取可视化区域的高度
-			let viewHeight = document.documentElement.clientHeight;
+			var viewHeight = document.documentElement.clientHeight;
 			//获取文档的高度
-			let dHeight = document.documentElement.offsetHeight;
+			var dHeight = document.documentElement.offsetHeight;
 			//保存差值
-			let maxHeight = dHeight - viewHeight;
+			var maxHeight = dHeight - viewHeight;
 			//获取滚动条的偏移量
-			let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+			var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 			if (maxHeight == scrollTop) {
 //				console.log(111);
 			   if(bol == true) {
@@ -134,7 +134,7 @@ window.onload = function() {
 			};
 		};
 };
-let pps = document.getElementsByClassName('header_ppp')[0];
+var pps = document.getElementsByClassName('header_ppp')[0];
 Vue.component('my-headerp1',{
 template: '<p class="header_p1">{{headeros.headers1}}</p>'
 });
@@ -142,9 +142,9 @@ Vue.component('my-headerp2',{
 template: '<p class="header_p2">{{headeros.hesders1_1}}</p>'
 });
 pps.innerHTML = '<my-headerp1 id="headerp1"></my-headerp1> <my-headerp2 id="headerp2"></my-headerp2>'
-let vm1_3 = new Vue({
+var vm1_3 = new Vue({
 	el: "#headerp1"
 });
-let vm1_4 = new Vue({
+var vm1_4 = new Vue({
 	el: "#headerp2"
 });

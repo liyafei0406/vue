@@ -1,13 +1,13 @@
-let div00 = document.querySelectorAll('.brand_lr div');
-		let li00 = document.querySelectorAll('.feature li');
-		let brand1 = document.getElementsByClassName('brand_i01')[0];
-		let brand2 = document.getElementsByClassName('brand_i02')[0];
+var div00 = document.querySelectorAll('.brand_lr div');
+		var li00 = document.querySelectorAll('.feature li');
+		var brand1 = document.getElementsByClassName('brand_i01')[0];
+		var brand2 = document.getElementsByClassName('brand_i02')[0];
 		div00[0].style.backgroundColor = '#00862e';
 		//滑动特色的动画效果
 //		$(".brand_lr div").eq(0).css("background-color","#00862e");
 		window.onload=function(){
-			let index0 = 8;
-			let index1 = 0;
+			var index0 = 8;
+			var index1 = 0;
 		touch.on(".feature li","swipeleft",function(){
 //			console.log(index0);
 //			console.log(li00[index0]);
@@ -17,7 +17,7 @@ let div00 = document.querySelectorAll('.brand_lr div');
 	 		return false;	
 	 	}else {
 	 		index1 ++;
-	 		for (let i = 0; i < div00.length; i ++) {
+	 		for (var i = 0; i < div00.length; i ++) {
 	 			div00[i].style.backgroundColor = '';
 	 		};	 		
 	 		div00[index1].style.backgroundColor = '#00862e';
@@ -37,7 +37,7 @@ let div00 = document.querySelectorAll('.brand_lr div');
 	 		return false;
 	 	}else {
 	 		index1 --;
-	 		for (let i = 0; i < div00.length; i ++) {
+	 		for (var i = 0; i < div00.length; i ++) {
 	 			div00[i].style.backgroundColor = '';
 	 		};
 	 		div00[index1].style.backgroundColor = '#00862e';
@@ -56,7 +56,7 @@ let div00 = document.querySelectorAll('.brand_lr div');
 	 		return false;
 	 	}else {
 	 		index1 ++;
-	 		for (let i = 0; i < div00.length; i ++) {
+	 		for (var i = 0; i < div00.length; i ++) {
 	 			div00[i].style.backgroundColor = '';
 	 		};
 	 		div00[index1].style.backgroundColor = '#00862e';
@@ -75,7 +75,7 @@ let div00 = document.querySelectorAll('.brand_lr div');
 	 		return false;
 	 	}else {
 	 		index1 --;
-	 		for (let i = 0; i < div00.length; i ++) {
+	 		for (var i = 0; i < div00.length; i ++) {
 	 			div00[i].style.backgroundColor = '';
 	 		};
 	 		div00[index1].style.backgroundColor = '#00862e';

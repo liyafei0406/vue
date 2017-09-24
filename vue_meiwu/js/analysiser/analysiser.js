@@ -1,9 +1,9 @@
 //头部显示
-let headeros = {
+var headeros = {
 	headers1:'市场分析',
 	hesders1_1:'市场内容'
 };
-let pps = document.getElementsByClassName('header_ppp')[0];
+var pps = document.getElementsByClassName('header_ppp')[0];
 Vue.component('my-headerp1',{
 template: '<p class="header_p1">{{headeros.headers1}}</p>'
 });
@@ -11,13 +11,13 @@ Vue.component('my-headerp2',{
 template: '<p class="header_p2">{{headeros.hesders1_1}}</p>'
 });
 pps.innerHTML = '<my-headerp1 id="headerp1"></my-headerp1> <my-headerp2 id="headerp2"></my-headerp2>'
-let vm4_1 = new Vue({
+var vm4_1 = new Vue({
 	el: "#headerp1"
 });
-let vm4_2 = new Vue({
+var vm4_2 = new Vue({
 	el: "#headerp2"
 });
-let analysisers = {
+var analysisers = {
 	analysisersImg1:'img/banner05.jpg',
 	analysisersLi: {
 		H4:'创业就业首选装修   一个永不落幕的黄金市场',
@@ -95,43 +95,43 @@ let analysisers = {
 				}				
 	]
 };
-let Img4_1 = Vue.extend({
+var Img4_1 = Vue.extend({
 template: '<img class="img12" v-bind:src="analysisers.analysisersImg1"/>'
 });
-let h44_1 = Vue.extend({
+var h44_1 = Vue.extend({
 	template:'<h4>{{analysisers.analysisersLi.H4}}</h4>'
 });
-let h54_1 = Vue.extend({
+var h54_1 = Vue.extend({
 	template:'<h5>{{analysisers.analysisersLi.H5_1}}</h5>'
 });
-let h54_2 = Vue.extend({
+var h54_2 = Vue.extend({
 	template:'<h5>{{analysisers.analysisersLi.H5_2}}</h5>'
 });
-let p4_1 = Vue.extend({
+var p4_1 = Vue.extend({
 	template:'<p>{{analysisers.analysisersLi.P1}}</p>'
 });
-let p4_2 = Vue.extend({
+var p4_2 = Vue.extend({
 	template:'<p>{{analysisers.analysisersLi.P2}}</p>'
 });
-let p4_3 = Vue.extend({
+var p4_3 = Vue.extend({
 	template:'<p>{{analysisers.analysisersLi.P3}}</p>'
 });
-let p4_4 = Vue.extend({
+var p4_4 = Vue.extend({
 	template:'<p>{{analysisers.analysisersLi.P4}}</p>'
 });
-let p4_5 = Vue.extend({
+var p4_5 = Vue.extend({
 	template:'<p>{{analysisers.analysisersLi.P5}}</p>'
 });
-let p4_6 = Vue.extend({
+var p4_6 = Vue.extend({
 	template:'<p>{{analysisers.analysisersLi.P6}}</p>'
 });
-let Img4_2 = Vue.extend({
+var Img4_2 = Vue.extend({
 	template:'<img v-bind:src="analysisers.analysisersLi.img1" />'
 });
-let Img4_3 = Vue.extend({
+var Img4_3 = Vue.extend({
 	template:'<img v-bind:src="analysisers.analysisersLi.img2" />'
 });
-let div4_1 = Vue.extend({
+var div4_1 = Vue.extend({
 	template:'<div class="particulars_li project_div"><child5></child5><child6></child6><child7></child7><child8></child8><child9></child9><child10></child10><child11></child11><child12></child12><child13></child13><child14></child14><child15></child15></div>',
 	components: {
 		'child5': h44_1,
@@ -147,10 +147,10 @@ let div4_1 = Vue.extend({
     	'child15': Img4_3    	
 	}
 });
-let ul4_1 = Vue.extend({
+var ul4_1 = Vue.extend({
 	template:'<ul><li v-for="analysisersx in analysisers.analysisersDiv"><div class="project_xdiv">{{analysisersx.analysisersName}}</div><div class="particulars_li project_xli"><h4>{{analysisersx.h0}}</h4><h5>{{analysisersx.h1}}</h5><p>{{analysisersx.p1}}</p><img v-bind:src="analysisersx.img1"/><h5>{{analysisersx.h2}}</h5><p>{{analysisersx.p2}}</p><img v-bind:src="analysisersx.img2"/><h5>{{analysisersx.h3}}</h5><p>{{analysisersx.p3}}</p><img v-bind:src="analysisersx.img3"/><h5>{{analysisersx.h4}}</h5><p>{{analysisersx.p4}}</p><img v-bind:src="analysisersx.img4"/><h5>{{analysisersx.h5}}</h5><p>{{analysisersx.p5}}</p><h5>{{analysisersx.h6}}</h5><p>{{analysisersx.p6}}</p></div></li></ul>'
 });
-let div4_2 = Vue.extend({
+var div4_2 = Vue.extend({
 	template:'<div class="project_x"><child4></child4></div>',
 	components: {
 		'child4': ul4_1
@@ -165,38 +165,38 @@ Vue.component('my-analysisers1',{
     'child3': div4_2
    }
 });
-let vm4_3 = new Vue({
+var vm4_3 = new Vue({
 	el: "#analysiser"
 });
 //根据QueryString参数名称获取值
 function getQueryStringByName(name) {
-    let result = location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
+    var result = location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
     if (result == null || result.length < 1) {
         return "";
     };
     return result[1];
 };
 //document.ready = function() {
-		let numb2 = decodeURI(getQueryStringByName('numb2'));
+		var numb2 = decodeURI(getQueryStringByName('numb2'));
 //		console.log(typeof numb2);
-		let projecters_xx = document.querySelectorAll('.project_x li');
-		let projecters_div = document.getElementsByClassName('project_div')[0];
-		let projecters_xli = document.getElementsByClassName('project_xli');
+		var projecters_xx = document.querySelectorAll('.project_x li');
+		var projecters_div = document.getElementsByClassName('project_div')[0];
+		var projecters_xli = document.getElementsByClassName('project_xli');
 		if(numb2 === '0') {
 		   projecters_div.style.display = 'none';	
-		 	for(let i = 0; i < projecters_xx.length; i ++) {
+		 	for(var i = 0; i < projecters_xx.length; i ++) {
 		 		projecters_xli[i].style.display = 'none';
 		 	};
 		 	projecters_xli[numb2].style.display = 'block';
 		}else if(numb2 === '1') {
 			 projecters_div.style.display = 'none';	
-		 	for(let i = 0; i < projecters_xx.length; i ++) {
+		 	for(var i = 0; i < projecters_xx.length; i ++) {
 		 		projecters_xli[i].style.display = 'none';
 		 	};
 		 	projecters_xli[numb2].style.display = 'block';
 		}else if(numb2 === '2') {
 			 projecters_div.style.display = 'none';	
-		 	for(let i = 0; i < projecters_xx.length; i ++) {
+		 	for(var i = 0; i < projecters_xx.length; i ++) {
 		 		projecters_xli[i].style.display = 'none';
 		 	};
 		 	projecters_xli[numb2].style.display = 'block';

@@ -1,4 +1,4 @@
-let new1 = {
+var new1 = {
 	news: "new.html",
 	newsDetaile: "news_details.html",
 	imgs1: "img/rightjt.png",
@@ -12,25 +12,25 @@ let new1 = {
 		]
 };
 //console.log(new1.detailer);
-let img2 = Vue.extend({
+var img2 = Vue.extend({
 template: '<img style="width: 5%;" class="more" v-bind:src="new1.imgs1" alt="图片错误"/>'
 });
-let a1 = Vue.extend({
+var a1 = Vue.extend({
 template: '<a v-bind:href="new1.news">{{new1.newbiao}}<child5></child5></a>',
  components: {
     'child5': img2
    }
 });
-let p1 = Vue.extend({
+var p1 = Vue.extend({
 template: '<p class="in_h"><child4></child4></p>',
  components: {
     'child4': a1
    }
 });
-let hr1 = Vue.extend({
+var hr1 = Vue.extend({
 template: '<hr style="clear: both; border: none; border-bottom: 1px solid #dfdfdf; margin-bottom: 10px;" />'
 });
-let ul3 = Vue.extend({
+var ul3 = Vue.extend({
 template: "<ul class='ic'><li v-for='new2 in new1.detailer'><a v-bind:href='new1.newsDetaile'>{{new2}}</a></li></ul>"
 });
 Vue.component('my-news1',{
@@ -42,6 +42,6 @@ Vue.component('my-news1',{
     
    }
 });
-let vm5 = new Vue({
+var vm5 = new Vue({
 	el: "#news1"
 });

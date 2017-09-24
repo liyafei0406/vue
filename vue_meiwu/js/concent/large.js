@@ -11,19 +11,19 @@
             'img/lun1.png'
         ]
     },
-    created() {
+    created:function() {
         this.play();
     },
     methods: {
-        change(i) {
+        change: function(i) {
             this.mark = i;
         },
-        autoPlay() {
+        autoPlay: function() {
 			this.mark ++;
-            let middles = document.getElementsByClassName('middle')[0];
-             let imgs = document.getElementsByClassName('imgs')[0].offsetWidth;
+            var middles = document.getElementsByClassName('middle')[0];
+             var imgs = document.getElementsByClassName('imgs')[0].offsetWidth;
             if(this.mark == 5) {
-            	let _this = this;
+            	var _this = this;
             	setTimeout ( function(marker) {
             	middles.style.transitionDuration = "0s";
             	middles.style.left = 0;
@@ -43,7 +43,7 @@
                
    
         },
-        play() {
+        play: function() {
         	clearInterval(this.timer);
             this.timer = setInterval(this.autoPlay, 2000);
         }

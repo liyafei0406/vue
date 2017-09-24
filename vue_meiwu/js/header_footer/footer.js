@@ -1,4 +1,4 @@
-let footers = {
+var footers = {
 	magicersbiao: "更多项目",
 	magicers1: [
 		{magicersite:'http://www.cyg799.com',magicersImg:'img/site01.png'},
@@ -21,13 +21,13 @@ let footers = {
 	scrollers:'vm15.scroller()'
 };
 //更多项目
-let p7 = Vue.extend({
+var p7 = Vue.extend({
 template: '<p class="in_h">{{footers.magicersbiao}}</p>'
 });
-let hr7 = Vue.extend({
+var hr7 = Vue.extend({
 template: '<hr style="clear: both; border: none; border-bottom: 1px solid #dfdfdf; margin-bottom: 10px;" />'
 });
-//let a6 = Vue.extend({
+//var a6 = Vue.extend({
 //template: '<a v-bind:href="featurers.featurers1"><child4></child4></a>'
 //});
 Vue.component('my-magicer1',{
@@ -37,23 +37,23 @@ Vue.component('my-magicer1',{
     'child2': hr7   
    }
 });
-let vm11 = new Vue({
+var vm11 = new Vue({
 	el: "#magicer"
 });
 //地址备案
-let span1 = Vue.extend({
+var span1 = Vue.extend({
 template: '<span style="display: block; padding-top: 10px;">{{footers.recordersite}}</span>'
 });
-let p8 = Vue.extend({
+var p8 = Vue.extend({
 template: '<p><child5></child5></p>',
  components: {
     'child5': span1  
    }
 });
-let img9 = Vue.extend({
+var img9 = Vue.extend({
 template: '<img style="margin-right: 3%; float: right;" v-bind:src="footers.recordersImg" alt="图片错误"/>'
 });
-let p9 = Vue.extend({
+var p9 = Vue.extend({
 template: '<p>{{footers.recordersnum}}<child6></child6></p>',
  components: {
     'child6': img9
@@ -66,11 +66,11 @@ Vue.component('my-recorders1',{
     'child4': p9  
    }
 });
-let vm12 = new Vue({
+var vm12 = new Vue({
 	el: "#recorders"
 });
 //托盘
-let ul8 = Vue.extend({
+var ul8 = Vue.extend({
 template: "<ul><li v-for='stockerss in footers.stockers1' v-bind:onclick='stockerss.stockersite'><img v-bind:src='stockerss.stockersImg1'/><img class='stock_is' v-bind:src='stockerss.stockersImg2'/><br />{{stockerss.stockersName}}</li></ul>"
 });
 Vue.component('my-stockers1',{
@@ -79,22 +79,22 @@ Vue.component('my-stockers1',{
     	'child7': ul8
    }
 });
-let vm13 = new Vue({
+var vm13 = new Vue({
 	el: "#stockers",
 	methods: {
-		site1() {
+		site1: function() {
 			this.stock01(0);
 			window.location.href='index.html';
 		},
-		site2() {
+		site2: function() {
 			this.stock01(1);
 			window.location.href='project.html';
 		},
-		site3() {
+		site3: function() {
 			this.stock01(2);
 			window.location.href='tel://400-709-2868';
 		},
-		func1() {
+		func1: function() {
 			this.stock01(3);
 			layer.open({
 			type: 2,
@@ -105,9 +105,9 @@ let vm13 = new Vue({
 			content: 'http://www.mhsjgc.com/dsly/excl_message2/index.asp'
 			});
 		},
-		stock01(index011) {
-			let stock_is1 = document.getElementsByClassName('stock_is');
-			for(let i = 0; i < stock_is1.length; i ++) {
+		stock01: function(index011) {
+			var stock_is1 = document.getElementsByClassName('stock_is');
+			for(var i = 0; i < stock_is1.length; i ++) {
 				stock_is1[i].style.display = 'none';
 			};
 			stock_is1[index011].style.display ="inline";
@@ -115,7 +115,7 @@ let vm13 = new Vue({
 	}
 });
 //在线咨询
-let img10 = Vue.extend({
+var img10 = Vue.extend({
 template: '<img v-bind:src="footers.onlinersImg" alt="图片错误"/>'
 });
 Vue.component('my-onliners1',{
@@ -124,10 +124,10 @@ Vue.component('my-onliners1',{
     	'child8': img10
    }
 });
-let vm14 = new Vue({
+var vm14 = new Vue({
 	el: "#onliners",
 	methods: {
-		func2 () {
+		func2: function () {
 			layer.open({
 			type: 2,
 			title: '在线咨询',
@@ -140,7 +140,7 @@ let vm14 = new Vue({
 	}
 });
 //回到顶部
-let img11 = Vue.extend({
+var img11 = Vue.extend({
 template: '<img v-bind:src="footers.untitledersImg" alt="图片错误"/>'
 });
 Vue.component('my-untitleders1',{
@@ -149,17 +149,17 @@ Vue.component('my-untitleders1',{
     	'child9': img11
    }
 });
-let vm15 = new Vue({
+var vm15 = new Vue({
 	el: "#untitleders",
 	data: {
 		 times: null
 	},
 	methods: {
-		scroller () {
+		scroller: function () {
 //			console.log(111);
 			//获取滚动条的偏移量
-			let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-			let _this = this;
+			var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+			var _this = this;
          	this.times = setInterval(function () {
          		scrollTop -= 8;
          		if(scrollTop <= 0) {
@@ -171,11 +171,11 @@ let vm15 = new Vue({
 		}
 	}
 });
-let untitled1 = document.getElementsByClassName('untitled')[0];
-let online1 = document.getElementsByClassName('online')[0];
+var untitled1 = document.getElementsByClassName('untitled')[0];
+var online1 = document.getElementsByClassName('online')[0];
 window.onscroll = function() {
 			//获取滚动条的偏移量
-			let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+			var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 			if (scrollTop > 150) {
 				untitled1.style.display = 'block';
 	    		online1.style.display = 'block';
@@ -185,22 +185,22 @@ window.onscroll = function() {
 			};
 };
 	//判断空p标签
-	let pp1 = document.getElementsByTagName('p');
-	for(let i = 0; i < pp1.length; i ++) {
+	var pp1 = document.getElementsByTagName('p');
+	for(var i = 0; i < pp1.length; i ++) {
 	if(pp1[i].innerHTML == "" || pp1[i].innerHTML == null) {
 		pp1[i].style.display = 'none';
 	};
 	};
 	//判断空h5标签
-	let hh5 = document.getElementsByTagName('h5');
-	for(let i = 0; i < hh5.length; i ++) {
+	var hh5 = document.getElementsByTagName('h5');
+	for(var i = 0; i < hh5.length; i ++) {
 	if(hh5[i].innerHTML == "" || hh5[i].innerHTML == null) {
 		hh5[i].style.display = 'none';
 	};
 	};
  //判断空的img标签
- 	let imgi = document.getElementsByTagName('img');
-	for(let i = 0; i < imgi.length; i ++) {
+ 	var imgi = document.getElementsByTagName('img');
+	for(var i = 0; i < imgi.length; i ++) {
 	if(imgi[i].getAttribute("src") == "") {
 		imgi[i].style.display = 'none';
 	};

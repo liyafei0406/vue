@@ -1,9 +1,9 @@
 //头部显示
-let headeros = {
+var headeros = {
 	headers1:'产品系列',
 	hesders1_1:'产品介绍'
 };
-let pps = document.getElementsByClassName('header_ppp')[0];
+var pps = document.getElementsByClassName('header_ppp')[0];
 Vue.component('my-headerp1',{
 template: '<p class="header_p1">{{headeros.headers1}}</p>'
 });
@@ -11,13 +11,13 @@ Vue.component('my-headerp2',{
 template: '<p class="header_p2">{{headeros.hesders1_1}}</p>'
 });
 pps.innerHTML = '<my-headerp1 id="headerp1"></my-headerp1> <my-headerp2 id="headerp2"></my-headerp2>'
-let vm2_1 = new Vue({
+var vm2_1 = new Vue({
 	el: "#headerp1"
 });
-let vm2_2 = new Vue({
+var vm2_2 = new Vue({
 	el: "#headerp2"
 });
-let projecterss = {
+var projecterss = {
 	projectersImg1:'img/banner04.jpg',
 	projectersLi: {
 		projectersH4:'集成装修+魔画科技+玻艺空间',
@@ -40,49 +40,49 @@ let projecterss = {
 			{projectersite:'glass_space.html',projectersName:'玻璃空间'}
 	]
 };
-let Img2_1 = Vue.extend({
+var Img2_1 = Vue.extend({
 template: '<img class="img12" v-bind:src="projecterss.projectersImg1"/>'
 });
-let h42_1 = Vue.extend({
+var h42_1 = Vue.extend({
 	template:'<h4>{{projecterss.projectersLi.projectersH4}}</h4>'
 });
-let h52_1 = Vue.extend({
+var h52_1 = Vue.extend({
 	template:'<h5>{{projecterss.projectersLi.projectersH5_1}}</h5>'
 });
-let h52_2 = Vue.extend({
+var h52_2 = Vue.extend({
 	template:'<h5>{{projecterss.projectersLi.projectersH5_2}}</h5>'
 });
-let h52_3 = Vue.extend({
+var h52_3 = Vue.extend({
 	template:'<h5>{{projecterss.projectersLi.projectersH5_3}}</h5>'
 });
-let h52_4 = Vue.extend({
+var h52_4 = Vue.extend({
 	template:'<h5>{{projecterss.projectersLi.projectersH5_4}}</h5>'
 });
-let p2_1 = Vue.extend({
+var p2_1 = Vue.extend({
 	template:'<p>{{projecterss.projectersLi.projectersP1}}</p>'
 });
-let p2_2 = Vue.extend({
+var p2_2 = Vue.extend({
 	template:'<p>{{projecterss.projectersLi.projectersP2}}</p>'
 });
-let p2_3 = Vue.extend({
+var p2_3 = Vue.extend({
 	template:'<p>{{projecterss.projectersLi.projectersP3}}</p>'
 });
-let p2_4 = Vue.extend({
+var p2_4 = Vue.extend({
 	template:'<p>{{projecterss.projectersLi.projectersP4}}</p>'
 });
-let p2_5 = Vue.extend({
+var p2_5 = Vue.extend({
 	template:'<p>{{projecterss.projectersLi.projectersP5}}</p>'
 });
-let Img2_2 = Vue.extend({
+var Img2_2 = Vue.extend({
 	template:'<img v-bind:src="projecterss.projectersLi.projectersLimg1" />'
 });
-let Img2_3 = Vue.extend({
+var Img2_3 = Vue.extend({
 	template:'<img v-bind:src="projecterss.projectersLi.projectersLimg2" />'
 });
-let Img2_4 = Vue.extend({
+var Img2_4 = Vue.extend({
 	template:'<img v-bind:src="projecterss.projectersLi.projectersLimg3" />'
 });
-let div2_1 = Vue.extend({
+var div2_1 = Vue.extend({
 	template:'<div class="particulars_li"><child5></child5><child6></child6><child7></child7><child8></child8><child9></child9><child10></child10><child11></child11><child12></child12><child13></child13><child14></child14><child15></child15><child16></child16><child17></child17></div>',
 	components: {
 		'child5': h42_1,
@@ -100,10 +100,10 @@ let div2_1 = Vue.extend({
     	'child17': Img2_4
 	}
 });
-let ul2_1 = Vue.extend({
+var ul2_1 = Vue.extend({
 	template:'<ul><li v-for="projectersx in projecterss.projectersDiv"><a v-bind:href="projectersx.projectersite"><div class="project_xdiv">{{projectersx.projectersName}}</div></li></a></ul>'
 });
-let div2_2 = Vue.extend({
+var div2_2 = Vue.extend({
 	template:'<div class="project_x"><child4></child4></div>',
 	components: {
 		'child4': ul2_1
@@ -118,6 +118,6 @@ Vue.component('my-projecters1',{
     'child3': div2_2
    }
 });
-let vm2_3 = new Vue({
+var vm2_3 = new Vue({
 	el: "#projecters"
 });
