@@ -30,7 +30,7 @@ var Img1_2 = Vue.extend({
 template: '<img style="margin-top: 10px; width: 30%; margin-left: 30%; display: block;" v-bind:src="newers.newersImg2"/>'
 });
 var p1_1 = Vue.extend({
-template: '<p style="margin:10px 0 10px 35%;width: 100%; font-size: 0.8rem;">{{newers.newersP}}</p>'
+template: '<p style="margin:10px 0 10px 35%; font-size: 0.8rem;">{{newers.newersP}}</p>'
 });
 var div1_2 = Vue.extend({
 template: '<div class="news_xiao"><child5></child5><child6></child6></div>',
