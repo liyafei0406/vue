@@ -37,7 +37,6 @@
 		                                  .hhh{display:block; color:#fff; width:100%;height:100%;z-index:9999999; position:relative;background:#000;}
 										  .hhh h1{width:100%;text-align:center;position:absolute;top:20%;}
 	}
-
     </style>
 		<link rel="stylesheet" type="text/css" href="css/custom.css"/>
 		<link rel="stylesheet" type="text/css" href="css/pulic.css"/>
@@ -136,9 +135,10 @@
 			slidesPerView: 1,
 			centeredSlides: true,
 			speed:1000,
-			autoplay:5000,
+			autoplay:1000,
 			loop: false
     });
+    swiper.detachEvents();
     setTimeout(function() {
     	 swiper.stopAutoplay();
     	 $('.swiper-container').hide();
@@ -146,7 +146,7 @@
 //  	 document.getElementsByClassName('bg')[0].style.transitionDuration = "1s";
 //  	 document.getElementsByClassName('bg')[0].style.display = "block";
 $('.bg').fadeIn(1000);
-    },40500);
+    },10500);
 //  });
     </script>
 	<script type="text/javascript">
