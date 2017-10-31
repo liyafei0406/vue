@@ -88,7 +88,7 @@ var vm2 = new Vue({
 //	}
 });
 var navers = [
-				{id:'icon1',catalogue: 'page.html',names:'首页'},
+				{id:'icon1',catalogue: 'index.html',names:'首页'},
 				{id:'icon2',catalogue: 'new.html',names:'新闻资讯'},
 				{id:'icon3',catalogue: 'project.html',names:'产品系列'},
 				{id:'icon4',catalogue: 'project_introduction.html',names:'项目介绍'},

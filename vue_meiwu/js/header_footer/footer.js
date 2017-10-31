@@ -84,7 +84,7 @@ var vm13 = new Vue({
 	methods: {
 		site1: function() {
 			this.stock01(0);
-			window.location.href='page.html';
+			window.location.href='index.html';
 		},
 		site2: function() {
 			this.stock01(1);
