@@ -48,7 +48,7 @@
 		<div class="hhh"><h1>美屋定制提醒您,竖屏浏览效果更好</h1></div>
     <!-- Swiper -->
     <div class="swiper-container swiper-container-vertical swiper-container-fade">
-        <div class="swiper-wrapper" style="transition-duration: 10ms;">
+        <div class="swiper-wrapper" style="transition-duration: 10ms;-moz-transition-duration:10ms;-webkit-transition-duration: 10ms;-o-transition-duration: 10ms;">
             <div class="swiper-slide swiper-slide1" style=" display: block;  "><img src="img/1_1.jpg" alt="美屋定制"></div>           
             <div class="swiper-slide swiper-slide1" style=" display: block;  "><img src="img/2_2.jpg" alt="美屋定制"></div>
             <div class="swiper-slide swiper-slide1" style="display: block;  "><img src="img/3_3.jpg" alt="美屋定制"></div>
@@ -124,6 +124,7 @@
 	<script type="text/javascript" src="js/touch_featuer.js"></script>
 	 <script src="js/swiper.min.js"></script>
     <script>	
+    	$(function () {
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
 	        direction: 'vertical',
@@ -136,10 +137,13 @@
     });
     setTimeout(function() {
     	 swiper.stopAutoplay();
-    	 document.getElementsByClassName('swiper-container')[0].style.display = "none";
+    	 $('.swiper-container').hide();
+//  	 document.getElementsByClassName('swiper-container')[0].style.display = "none";
 //  	 document.getElementsByClassName('bg')[0].style.transitionDuration = "1s";
-    	 document.getElementsByClassName('bg')[0].style.display = "block";
+//  	 document.getElementsByClassName('bg')[0].style.display = "block";
+$('.bg').fadeIn(1500);
     },10500);
+    });
     </script>
 	<script type="text/javascript">
 			document.getElementsByClassName('stock_is')[0].style.display = "inline-block";
