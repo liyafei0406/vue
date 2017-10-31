@@ -15,15 +15,18 @@
     html, body {
         height: 100%;        
     }
-    .swiper-container {
+    .mean-container {
+    	position: relative;
+    }
+    .swiper-container1 {
         width: 100%;
         height: 100%;
     }
-    .swiper-slide {
-    	transition-duration: 10ms;
-	-moz-transition-duration:10ms; /* Firefox 4 */
-	-webkit-transition-duration: 10ms; /* Safari 和 Chrome */
-	-o-transition-duration: 10ms; /* Opera */
+    .swiper-slide0 {
+    	position:absolute;
+    }
+    .swiper-slide1 {
+    display: block;	
 	transform:translate3d(0px, 0px, 0px);
 	-ms-transform:translate3d(0px, 0px, 0px); 	/* IE 9 */
 	-moz-transform:translate3d(0px, 0px, 0px); 	/* Firefox */
@@ -33,7 +36,7 @@
 	.swiper-slide1 img{width:100%;height:100%;display: block;}
 	 @media (orientation: portrait) { .hhh{display:none;}}
 		
-		@media (orientation: landscape) { header,.swiper-container{display:none;}
+		@media (orientation: landscape) { header,.swiper-slide0{display:none;}
 		                                  .hhh{display:block; color:#fff; width:100%;height:100%;z-index:9999999; position:relative;background:#000;}
 										  .hhh h1{width:100%;text-align:center;position:absolute;top:20%;}
 	}
@@ -50,17 +53,15 @@
 	<body class="mean-container" style="">
 		<div class="hhh"><h1>美屋定制提醒您,竖屏浏览效果更好</h1></div>
     <!-- Swiper -->
-    <div class="swiper-container swiper-container-vertical swiper-container-fade">
-        <div class="swiper-wrapper" style="transition-duration: 10ms;-moz-transition-duration:10ms;-webkit-transition-duration: 10ms;-o-transition-duration: 10ms;">
-            <div class="swiper-slide swiper-slide1" style=" display: block;  "><img src="img/1_1.jpg" alt="美屋定制"></div>           
-            <div class="swiper-slide swiper-slide1" style=" display: block;  "><img src="img/2_2.jpg" alt="美屋定制"></div>
-            <div class="swiper-slide swiper-slide1" style="display: block;  "><img src="img/3_3.jpg" alt="美屋定制"></div>
-              <div class="swiper-slide swiper-slide1" style=" display: block;  "><img src="img/4_4.jpg" alt="美屋定制"></div>
-             <div class="swiper-slide swiper-slide1" style=" display: block;  "><img src="img/5_5.jpg" alt="美屋定制"></div>
-            <div class="swiper-slide swiper-slide1" style=" display: block;  "><img src="img/6_6.jpg" alt="美屋定制"></div>
-             </div>     
-    </div>
-		<div class="bg" style="display: none;">
+    <!--<div class="swiper-container1">-->
+            <div class="swiper-slide1 swiper-slide0"><img src="img/6_6.jpg" alt="美屋定制"></div>           
+            <div class="swiper-slide1 swiper-slide0"><img src="img/5_5.jpg" alt="美屋定制"></div>
+            <div class="swiper-slide1 swiper-slide0"><img src="img/4_4.jpg" alt="美屋定制"></div>
+              <div class="swiper-slide1 swiper-slide0"><img src="img/3_3.jpg" alt="美屋定制"></div>
+             <div class="swiper-slide1 swiper-slide0"><img src="img/2_2.jpg" alt="美屋定制"></div>
+            <div class="swiper-slide1 swiper-slide0"><img src="img/1_1.jpg" alt="美屋定制"></div>
+    <!--</div>-->
+		<div class="bg swiper-slide0" style="display: none;">
 			<!--头部搜索框-->
 			<my-header id="headers" ></my-header>							
 			<my-head01 v-show="locals1" id="headers01"></my-head01>				
@@ -125,29 +126,18 @@
 	</body>
 	<script type="text/javascript" src="js/touch.js"></script>
 	<script type="text/javascript" src="js/touch_featuer.js"></script>
-	 <script src="js/swiper.min.js"></script>
     <script>	
-//  	$(function () {
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-	        direction: 'vertical',
-			effect : 'fade',
-			slidesPerView: 1,
-			centeredSlides: true,
-			speed:1000,
-			autoplay:1000,
-			loop: false
+    	$(function () {
+    		var num10 = 5;
+    		var timer = setInterval(function() {
+    			$('.swiper-slide0').eq(num10).fadeOut(1000);
+    			if(num10 <= 0) {
+    				$('.swiper-slide0').eq(6).fadeIn(1000);
+    				clearInterval(timer);
+    			}
+    			num10 --;
+    		}, 2500);
     });
-    swiper.detachEvents();
-    setTimeout(function() {
-    	 swiper.stopAutoplay();
-    	 $('.swiper-container').hide();
-//  	 document.getElementsByClassName('swiper-container')[0].style.display = "none";
-//  	 document.getElementsByClassName('bg')[0].style.transitionDuration = "1s";
-//  	 document.getElementsByClassName('bg')[0].style.display = "block";
-$('.bg').fadeIn(1000);
-    },10500);
-//  });
     </script>
 	<script type="text/javascript">
 			document.getElementsByClassName('stock_is')[0].style.display = "inline-block";
