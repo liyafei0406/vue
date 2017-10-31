@@ -31,13 +31,13 @@
 .seek button img {
 	width: 18px;
 	margin-left: -45%;
-	margin-top: 4px
+	margin-top: 3px
 }
 
 .seek button span {
 	display: block;
 	margin-left: 45%;
-	margin-top: -50%;
-	line-height: 16px;
+	margin-top: -45%;
+	line-height: 22px;
 	/*color: #abadae;*/
 }
