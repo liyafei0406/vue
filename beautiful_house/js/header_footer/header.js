@@ -4,7 +4,7 @@ template: "<img class='header_i1' src='img/logo.png'/>"
 });
 //var locals = false;
 var Img2 = Vue.extend({
-template: '<img v-on:click="local" class="header_i2" style="top: 0.4%" src="img/IMG_0597.PNG"/>',
+template: '<img v-on:click="local" class="header_i2" style="top: 0.3%" src="img/IMG_0597.PNG"/>',
 methods: {
 		local: function() {
 			vm2.locals1 = true;
