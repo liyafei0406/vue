@@ -1,0 +1,368 @@
+/*大图滚动*/
+.wrap {
+	/*margin-top: 10px;*/
+	width: 100%;
+	overflow: hidden;
+	position: relative
+}
+.middle {
+	width: 600%;
+	position: relative;
+	left: 0;
+	transition: all 1s ease;
+	-moz-transition: all 1s ease; /* Firefox 4 */
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+	-o-transition: all 1s ease;
+}
+.middle img {
+	width: 16.666666%;
+	float: left
+}
+/*大图滚动按钮*/
+.wrap_d {
+	position: absolute;
+	width: 60px;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 15px
+}
+.wrap_d li {
+	width: 8px;
+	height: 8px;
+	float: left;
+	border: 1px white solid;
+	margin-left: 2px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+}
+.active {
+	background-color: #008434
+}
+/*导航栏*/
+.navs {
+	width: 100%;
+}
+.navs li {
+	width: 30%;
+	margin-left: 2.5%;
+	margin-top: 10px;
+	float: left;
+	text-align: center;
+	/*color: #abadae*/
+}
+.navs li img {
+	width: 50%;
+}
+.navs li h5 {
+	font-size: .9rem;
+	margin-top: 10px;
+	/*color: #000000;*/
+}
+/*品牌公司*/
+.indexL {
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+	clear: both
+}
+.indexL .ic {
+	width: 100%;
+}
+.news_div {
+	margin-bottom: 10px;
+	width: 100%;
+}
+.news_div img {
+	width: 45.5%;
+	margin-left: 3%;
+}
+.indexL .ic li {
+	height: 15px;
+	width: 94%;
+	margin-left: 3%;
+	margin-bottom: 10px
+}
+.indexL .ic a {
+	color: black;
+	font-size: 0.9rem;
+	text-decoration: none;
+	display: block;
+}
+.indexL .ic a p {
+	width: 70%;
+	overflow: hidden;
+	height: 16px;
+	letter-spacing: 1px
+}
+.indexL .ic a span {
+	display: block;
+	margin-left: 75%;
+	margin-top: -15px;
+	font-size: 0.8rem;
+}
+.more {
+	float: right;
+	margin-right: 10px;
+}
+/*环保保障*/
+.brand {
+	width: 100%;
+	margin-top: 10px;
+}
+.brand li {
+	width: 45.5%;
+	float: left;
+	margin-left: 3%;
+	/*margin-top: 10px;*/
+	font-size: .9rem;
+	padding-bottom: 10px;
+}
+.brand li img {
+	width: 100%;
+	display: block;
+}
+.project_hp {
+	width: 100%;
+	text-align: center;
+	background-color: #f6f6f6;
+	padding-bottom: 5px;
+}
+.project_hp h2 {
+	font-size: 1.1rem;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	font-weight: normal;
+	color: #00862e;
+	letter-spacing: 1px;
+}
+.project_hp p {
+	font-size: 0.8rem;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+/*.brand_d {
+	width: 50%;
+	margin-top: 10px;
+	text-align: center;
+	float: left;
+	margin-left: 25%;
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background-color: #00862e;
+	color: white;
+	font-size: 0.8rem;
+}*/
+/*智能家居*/
+.feature {
+	margin-top: 10px;
+}
+.feature ul {
+	position: relative
+}
+.feature li {
+	width: 94%;
+	/*margin-top: 10px;*/
+	left: 3%;
+	position: absolute;
+	background-color: #FFFFFF;
+	transition: all 1s ease;
+	-moz-transition: all 1s ease; /* Firefox 4 */
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+	-o-transition: all 1s ease;
+}
+.feature li img:nth-child(1) {
+	width: 100%;
+	font-weight: bold;
+}
+.feature_dl {
+	margin-top: 10px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.feature_dl p:nth-child(1) {
+	font-size: 1.1rem;
+}
+.feature_dl p:nth-child(2) {
+	/*color: #abadae;*/
+	font-size: .9rem;
+	padding-bottom: 20px;
+	margin-top: 10px
+}
+.feature_dl img {
+	width: 4%;
+	float: right;
+	margin-right: 5%;
+	margin-bottom: 10px
+}
+/*智能家居滑动效果*/
+.brand_lr {
+	width: 100%;
+	text-align: center;
+	/*color: #abadae;*/
+	font-size: 0.9rem;
+	clear: both;
+	margin-top: 96%;
+}
+.brand_lr img {
+	width: 4%;
+}
+.brand_lr div {
+	border: 1px solid #00862e;
+	width: 13px;
+	height: 13px;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	margin-left: 6%;
+	float: left;
+	margin-top: 2px;
+}
+.brand_lr img:nth-child(1) {
+	float: left;
+	margin-left: 4.5%
+}
+.brand_lr img:nth-child(3) {
+	float: right;
+	margin-right: 4.5%;
+}
+/*.projecter {
+	padding-bottom: 10px;
+}*/
+/*六大风格*/
+.successful {
+	margin-top: 10px;
+}
+.successful .in_h {
+text-indent: 10px;	
+}
+.successful li {
+	width: 94%;
+	margin-left: 3%;
+	margin-bottom: 6px;
+	/*margin-top: 10px;*/
+}
+.successful_li {
+	width: 25%;
+	/*display: block;*/
+	/*border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%*/
+}
+.successful_ld {
+	width: 72%;
+	float: right;
+	/*padding-top: 6px;*/
+	padding-bottom: 10px;
+	/*padding-left: 6px;*/
+	background-color: #f6f6f6;
+	letter-spacing: 1px;
+}
+.successful_ld p:nth-child(1) {
+	font-size: 1rem;
+}
+.successful_ld p:nth-child(2) {
+	/*color: #abadae;*/
+	font-size: .8rem;
+	/*width: 100%;*/
+	margin-top: 5px;
+}
+/*环保案例*/
+.brand1 {
+	width: 100%;
+	/*margin-top: 88%;*/
+	clear: both;
+	padding-top: 10px;
+	/*margin-bottom: 10px;*/
+}
+.brand1 li {
+	width: 29.3333333333%;
+	float: left;
+	margin-left: 3%;
+	/*margin-top: 10px;*/
+	font-size: .9rem;
+	padding-bottom: 10px;
+}
+.brand1 li img {
+	width: 100%;
+	display: block;
+}
+.brand1 li h2 {
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: normal;
+	/*margin-top: 5px;*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #f6f6f6;
+	letter-spacing: 1px;
+	color: #008434;
+}
+.brand1 li p {
+	text-align: center;
+	font-size: .9rem;
+	color: #008434;
+	/*padding-top: 5px;*/
+	padding-bottom: 5px;
+	background-color: #f6f6f6;
+	letter-spacing: 1px;
+	/*color: #abadae;*/
+}
+/*合作保障*/
+/*.security {
+	margin-top: 10px;
+}*/
+/*全案流程*/
+.aboutuss {
+	margin-top: 10px;
+}
+.aboutuss img{
+	display: block;
+}
+.aboutuss h5 {
+	font-size: 1.1rem;
+	color: #008434;
+	text-align: center;
+}
+.about_p {
+	font-size: 0.9rem;
+	line-height: 24px;
+	/*text-align: center;*/
+	letter-spacing: 1px;
+	margin: 10px 0;
+	margin-left: 3%;
+	width: 94%;
+	text-indent: 1.8rem;
+}
+/*质量管控*/
+.productDisplayss {
+	clear: both;
+}
+.productDisplayss .in_h {
+	text-indent: 10px;
+}
+.productDisplayss ul {
+	width: 100%;
+}
+.productDisplayss li {
+	width: 45.5%;
+	margin-left: 3%;
+	margin-top: 10px;
+	float: left;
+}
+.productDisplayss li p{
+	text-align: center;
+	font-size: .9rem;
+	padding-top: 10px;
+	background-color: #f6f6f6;
+}
+.productDisplayss li img {
+	width: 100%;
+	display: block;
+}

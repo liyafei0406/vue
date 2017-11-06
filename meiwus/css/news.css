@@ -1,0 +1,45 @@
+/*新闻查询*/
+table {
+	border-collapse: collapse;
+	width: 98%;
+	text-align: center;
+	margin-left: 1%;
+}
+table caption {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+table tr td{
+	padding: 3px;
+}
+table tr:hover {
+	background-color: #00862E;
+}
+.btn {
+	margin-left: 5px;
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: #00862E;
+	color: white;
+}
+.materialer2 {
+	padding-top: 20px;
+    text-align: center;
+    font-size: 12px!important;
+    height: 26px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+.materialer2 a {
+	font-size: 12px!important;
+    height: 26px;
+    line-height: 26px;
+    background-color: #00923f;
+    color: #fff;
+    padding: 3px 6px;
+    margin: 0px 3px;
+}
+a {
+	text-decoration: none;
+}

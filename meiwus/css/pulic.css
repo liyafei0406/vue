@@ -1,0 +1,257 @@
+/*公共的css属性*/
+* {
+	margin: 0;
+	padding: 0
+}
+li {
+	list-style-type: none
+}
+html {
+	font-size: 100%;
+	height: 100%;   
+}
+body {
+	font-size: 1em;
+	height: 100%;
+	position: relative;   
+}
+title {
+	text-align: center
+}
+/*背景大小*/
+.bg {
+	width: 100%;
+	background-color: #FFFFFF
+}
+/*头部*/
+.header {
+	width: 100%;
+	/*position: relative;*/
+	background-color: #00862e; 
+}
+.header_i1 {
+	width: 100%;
+	display: block;
+}
+.header p {
+	font-size: 0.8rem;
+}
+.header_p1 {
+	height: 28px;
+	line-height: 28px;
+	background: url(../img/h2_bg.png) no-repeat;
+	background-size: 100%;
+	color: #00862e;
+	text-indent: 10%;
+	display: block;
+}
+.header_p2 {
+	width: 100%;
+	text-align: center;
+	color: white;
+	height: 30px;
+	line-height: 30px;
+	background: url(../img/lan.png) no-repeat;
+}
+.header_i2 {
+	width: 7%;
+	position: absolute;
+	top: 12.5%;
+	right: 1%;
+	display: block;
+}
+/*下拉栏目*/
+.header_l1 {
+	background-color: #7f7f7f;
+	opacity: 0.4;
+	width: 40%;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.header_xl {
+	width: 60%;
+   background-color: #00862e;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 1;
+   height: 100vh;
+    padding-bottom: 10px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.header_xl li:nth-child(1) {
+	margin-top: 40px;
+}
+.header_xl li {
+	font-size: 0.8rem;
+	color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-bottom: 1px #dfdfdf solid;
+	padding: 10px 0;
+	position: relative;
+}
+.ico1 {
+	width: 20px;
+	height: 22px;
+	position: relative;
+	background-image: url("../img/icon-1.png");
+	background-repeat: no-repeat;
+	left: 10px;
+}
+.icon1 {
+	background-position: -2px -17px;
+}
+.icon2 {
+	background-position: -42px -17px;
+}
+.icon3 {
+	background-position: -82px -17px;
+}
+.icon4 {
+	background-position: -122px -17px;
+}
+.icon5 {
+	background-position: -162px -17px;
+}
+.icon6 {
+	background-position: -202px -17px;
+}
+.icon7 {
+	background-position: -242px -17px;
+}
+.header_xl li span {
+	position: absolute;
+	top: 14px;
+	left: 42px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+/*备案*/
+.recorder {
+	background-color: #045824;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 16%;
+	clear: both;
+}
+.recorder img {
+	width: 100%;
+	display: block;
+}
+/*下面托盘*/
+.stock {
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	bottom: 0;
+	z-index: 2;
+}
+.stock li {
+	float: left;
+	width: 25%;
+	font-size: .8rem;
+	text-align: center;
+	color: lightslategrey;
+	position: relative;
+}
+.stock li img {
+	width: 30%;
+	padding-top: 10px;
+	margin-bottom: 8px;
+}
+.stock li a {
+	text-decoration: none;
+	color: lightslategrey
+}
+.stock li .stock_is {
+	position: absolute;
+	left: 50%;
+	margin-left: -15%;
+	display: none;
+}
+/*小火箭*/
+.untitled {
+	width: 10%;
+	position: fixed;
+	right: 3%;
+	bottom: 25%;
+	border: 1px lightgray solid;
+	display: none;
+	padding: 2%;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%
+}
+.untitled img {
+	width: 100%;
+	margin-right: 0;
+	display: block
+}
+/*在线咨询*/
+.online {
+	width: 14%;
+	position: fixed;
+	right: 3%;
+	bottom: 36%;
+	display: none;
+}
+.online img {
+	width: 100%;
+	margin-right: 0;
+	display: block
+}
+h4 h5 {
+	font-family: "微软雅黑"
+}
+h2 {
+		font-family: "微软雅黑"
+}
+p {
+	font-family: "微软雅黑"
+}
+/*首页公共标题*/
+.in_h {
+	width: 94%;
+	margin-left: 3%;
+	margin-bottom: 10px;
+	font-family: 微软雅黑;
+	clear: both;
+	border-left: 1.5px solid #00862e;
+	color: #00862e;
+	font-size: 1.1rem;
+}
+.in_h a {
+	text-decoration: none;
+	color: #00862e;
+	font-size: 1.1rem;
+	font-family: 微软雅黑;
+	margin-left: 10px;
+}
+/*.in_h a span {
+	font-size: 0.8rem;
+	color: #abadae;
+}*/
+.magier {
+	margin-top: 10px;
+}
+.magier .in_h {
+	text-indent: 10px;
+}
+/*更多的项目*/
+.magier img {
+	width: 45.5%;
+	margin-left: 3%;
+	display: block;
+	/*margin-top: 10px;*/
+	margin-bottom: 10px;
+	float: left;
+}
