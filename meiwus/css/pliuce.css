@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.bg {
+	width: 1210px;
+	margin: 0 auto;
+	background-color: #00862e;
+}
+/*新闻头部*/
+.header {
+	width: 100%;
+	margin: 20px auto;
+}
+.header_right {
+	float: right;
+	margin-right: 20px;
+	color: white;
+	margin-top: 25px;
+}
+.header_rp1 {
+	float: left;
+	margin-right: 10px;
+}
+.header_rp2 {
+	float: right;
+}
+.header_right:hover {
+	cursor: pointer;
+}
+.header_dao1 {
+	color: white;
+	padding-left: 20px;
+	display: block;
+	width: 64px;
+}
+.header_dao2 {
+	float: right;
+	margin-top: -20px;
+	margin-right: 150px;
+	color: white;
+}
+.header_dao:hover {
+	cursor: pointer;
+	color: red;
+}
+.new {
+	background-color: white;
+}
