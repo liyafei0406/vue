@@ -112,33 +112,36 @@
 	margin-top: 10px;
 }
 .brand li {
-	width: 45.5%;
+	width: 50%;
 	float: left;
-	margin-left: 3%;
+	/*margin-left: 3%;*/
 	/*margin-top: 10px;*/
 	font-size: .9rem;
 	padding-bottom: 10px;
+	position: relative;
 }
 .brand li img {
-	width: 100%;
+	width: 50%;
 	display: block;
 }
 .project_hp {
-	width: 100%;
-	text-align: center;
+	width: 47%;
+	margin-left: 50%;
+	position: absolute;
+	top: 0;
 	background-color: #f6f6f6;
-	padding-bottom: 5px;
+	/*padding-bottom: 5px;*/
 }
 .project_hp h2 {
-	font-size: 1.1rem;
-	padding-top: 5px;
-	padding-bottom: 10px;
+	font-size: 1rem;
+	/*padding-top: 5px;*/
+	/*padding-bottom: 10px;*/
 	font-weight: normal;
 	color: #00862e;
 	letter-spacing: 1px;
 }
 .project_hp p {
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	line-height: 18px;
 	letter-spacing: 1px;
 }
