@@ -1,5 +1,5 @@
 var introductioners = {
-	introductionersImg1:'img/148231840872338l2iy.jpg',
+	introductionersImg1:'img/lun03.jpg',
 	introductionersDao:'环保材料',
 	introductionersDaoy:'MATERIAL',
 	introductionersDiv: [

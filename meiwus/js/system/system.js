@@ -1,6 +1,6 @@
 
 var glasspacers = {
-	glasspacersImg1:'img/148231840872338l2iy.jpg',
+	glasspacersImg1:'img/lun01.jpg',
 	glasspacersDao:'环保保障',
 	glasspacersDaoy:'SYSTEM',
 	glasspacersDiv: [

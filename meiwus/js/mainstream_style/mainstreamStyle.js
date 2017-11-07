@@ -1,5 +1,5 @@
 var analysisers = {
-	analysisersImg1:'img/148231840872338l2iy.jpg',
+	analysisersImg1:'img/lun05.jpg',
 	analysisersDao:'主流风格',
 	analysisersDaoy:'STYLES',
 	analysisersDiv: [

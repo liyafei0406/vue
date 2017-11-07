@@ -1,5 +1,5 @@
 var aboutUsers = {
-	aboutUsersImg1:'img/148231840872338l2iy.jpg',
+	aboutUsersImg1:'img/lun02.jpg',
 	aboutUsersDao:'品牌文化',
 	aboutUsersDaoy:'CULTURE',
 	aboutUsersDiv: [
