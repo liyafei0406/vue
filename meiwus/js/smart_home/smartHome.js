@@ -1,5 +1,5 @@
 var magicpaintingers = {
-	magicpaintingersImg1:'img/148231840872338l2iy.jpg',
+	magicpaintingersImg1:'img/lun06.jpg',
 	magicpaintingersDao:'智能家居',
 	magicpaintingersDaoy:'SMART',
 	magicpaintingersLi: {

@@ -3,12 +3,12 @@
     data: {
         mark: 0,
         timer: null,
-        img: ['img/148231840872338l2iy.jpg',
-            'img/148231840872338l2iy.jpg',
-            'img/148231840872338l2iy.jpg',
-            'img/148231840872338l2iy.jpg',
-            'img/148231840872338l2iy.jpg',
-            'img/148231840872338l2iy.jpg'
+        img: ['img/lun01.jpg',
+            'img/lun02.jpg',
+            'img/lun03.jpg',
+            'img/lun04.jpg',
+            'img/lun05.jpg',
+            'img/lun01.jpg'
         ]
     },
     created:function() {

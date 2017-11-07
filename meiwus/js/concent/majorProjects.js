@@ -1,14 +1,14 @@
 var majorProjects1 = {
 	projectsbiao: "环保保障",
 	projects1_2: [
-				{projectsite:'system.html?numb1=0',projectsImg:'img/at1.png',projectsName:'环保保障',projectsContent:'环保不达标 全额退款'},
-				{projectsite:'system.html?numb1=0',projectsImg:'img/at1.png',projectsName:'智能保障',projectsContent:'家居智能化 安全便捷'},
-				{projectsite:'system.html?numb1=0',projectsImg:'img/at1.png',projectsName:'质量保障',projectsContent:'质量不合格 砸掉重做'},
-				{projectsite:'system.html?numb1=0',projectsImg:'img/at1.png',projectsName:'设计保障',projectsContent:'设计个性化 确保品质'},
-				{projectsite:'system.html?numb1=0',projectsImg:'img/at1.png',projectsName:'4A保障',projectsContent:'省钱·省心·省力·省时'},
-				{projectsite:'system.html?numb1=0',projectsImg:'img/at1.png',projectsName:'产品保障',projectsContent:'产品保正品 集团采购'},
-				{projectsite:'system.html?numb1=0',projectsImg:'img/at1.png',projectsName:'软装保障',projectsContent:'软装艺术化 点亮生活'},
-				{projectsite:'system.html?numb1=0',projectsImg:'img/at1.png',projectsName:'服务保障',projectsContent:'水电隐工程 保修十年'}	
+				{projectsite:'system.html?numb1=0',projectsImg:'img/hz01.jpg',projectsName:'环保保障',projectsContent:'环保不达标 全额退款'},
+				{projectsite:'system.html?numb1=0',projectsImg:'img/hz02.jpg',projectsName:'智能保障',projectsContent:'家居智能化 安全便捷'},
+				{projectsite:'system.html?numb1=0',projectsImg:'img/hz03.jpg',projectsName:'质量保障',projectsContent:'质量不合格 砸掉重做'},
+				{projectsite:'system.html?numb1=0',projectsImg:'img/hz04.jpg',projectsName:'设计保障',projectsContent:'设计个性化 确保品质'},
+				{projectsite:'system.html?numb1=0',projectsImg:'img/hz05.jpg',projectsName:'4A保障',projectsContent:'省钱·省心·省力·省时'},
+				{projectsite:'system.html?numb1=0',projectsImg:'img/hz06.jpg',projectsName:'产品保障',projectsContent:'产品保正品 集团采购'},
+				{projectsite:'system.html?numb1=0',projectsImg:'img/hz07.jpg',projectsName:'软装保障',projectsContent:'软装艺术化 点亮生活'},
+				{projectsite:'system.html?numb1=0',projectsImg:'img/hz08.jpg',projectsName:'服务保障',projectsContent:'水电隐工程 保修十年'}	
 	]
 };
 var a2 = Vue.extend({

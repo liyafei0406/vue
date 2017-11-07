@@ -1,5 +1,5 @@
 var integrateders = {
-	integratedersImg1:'img/148231840872338l2iy.jpg',
+	integratedersImg1:'img/lun04.jpg',
 	integratedersDao:'环保案例',
 	integratedersDaoy:'CASE',
 	integratedersDiv: [
