@@ -108,7 +108,8 @@
 }
 /*环保保障*/
 .brand {
-	width: 100%;
+	width: 94%;
+	margin-left: 3%;
 	margin-top: 10px;
 }
 .brand li {
@@ -125,15 +126,15 @@
 	display: block;
 }
 .project_hp {
-	width: 50%;
-	margin-left: 50%;
+	width: 47%;
+	margin-left: 53%;
 	position: absolute;
 	top: 0;
 	background-color: #f6f6f6;
 	/*padding-bottom: 5px;*/
 }
 .project_hp h2 {
-	font-size: 1rem;
+	font-size: 0.9rem;
 	/*padding-top: 5px;*/
 	/*padding-bottom: 10px;*/
 	font-weight: normal;
