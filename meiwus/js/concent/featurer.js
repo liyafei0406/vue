@@ -3,7 +3,7 @@ var featurers = {
 	featurersbiao: "智能家居",
 	imgs1: "img/rightjt.png",
 	imgs2: "img/leftjt.png",
-	featurers2_1: "project.html",
+	featurers2_1: "smart_home.html",
 	featurers2_2: [
 		{featurersImg:'img/zn1.jpg',featurersName:'智能睡眠系统',featurersP:'监控呼吸频率、心跳，发现异常及时报警，保障用户身体健康，并在次日提交完整详尽的睡眠报告，有助改善睡眠状况。'},
 		{featurersImg:'img/zn1.jpg',featurersName:'智能门窗系统',featurersP:'根据光线强弱联动调整窗帘开度，根据空气质量联动开窗通风，打造健康舒适的生活环境。'},
