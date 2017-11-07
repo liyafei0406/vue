@@ -1,4 +1,4 @@
-//	var project_xdiv = document.querySelectorAll('.project_x li .project_xdiv');
+	var project_xdiv = document.querySelectorAll('.project_x li .project_xdiv');
 	var particulars_xi = document.getElementsByClassName('particulars_li');
 	var lenum = Math.ceil(project_xdiv.length / 3);
 		var paddh = (project_xdiv[0].offsetHeight + 10) * lenum;
@@ -9,7 +9,7 @@
 	//点击栏目动画效果
 		var num = null;		
 		var project_xx = document.querySelectorAll('.project_x li');
-		var project_div = document.getElementsByClassName('project_div')[0];
+//		var project_div = document.getElementsByClassName('project_div')[0];
 		var project_xli = document.getElementsByClassName('project_xli');		
 		for(var i = 0; i < project_xx.length; i ++) {
 			project_xx[i].nums = i;
