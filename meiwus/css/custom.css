@@ -269,6 +269,7 @@ text-indent: 10px;
 }
 .successful_ld p:nth-child(1) {
 	font-size: 1rem;
+	color: #008434;
 }
 .successful_ld p:nth-child(2) {
 	/*color: #abadae;*/

@@ -1,6 +1,6 @@
 var ProductDisplays = {
 	ProductDisplaysbiao: "质量管控",
-	ProductDisplaysDI:'project.html',
+	ProductDisplaysDI:'system.html?numb1=1',
 	ProductDisplays2:[
 						{imgs:'img/gt1.jpg',ps:'PC1放样标准'},
 						{imgs:'img/gt1.jpg',ps:'水电施工标准'},

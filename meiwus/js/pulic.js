@@ -1,4 +1,4 @@
-	var project_xdiv = document.querySelectorAll('.project_x li .project_xdiv');
+//	var project_xdiv = document.querySelectorAll('.project_x li .project_xdiv');
 	var particulars_xi = document.getElementsByClassName('particulars_li');
 	var lenum = Math.ceil(project_xdiv.length / 3);
 		var paddh = (project_xdiv[0].offsetHeight + 10) * lenum;
@@ -16,7 +16,7 @@
 			project_xx[i].onclick = function() {
 				if(num != this.nums) {
 					num = this.nums;
-					project_div.style.display = 'none';
+//					project_div.style.display = 'none';
 					for(var j = 0; j < project_xdiv.length; j ++) {
 						project_xli[j].style.display = 'none';
 						project_xdiv[j].style.backgroundColor = '#008b37';

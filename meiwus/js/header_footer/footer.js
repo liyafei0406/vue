@@ -40,11 +40,11 @@ var vm13 = new Vue({
 	methods: {
 		site1: function() {
 			this.stock01(0);
-			window.location.href='index.php';
+			window.location.href='index.html';
 		},
 		site2: function() {
 			this.stock01(1);
-			window.location.href='project.html';
+			window.location.href='mainstream_style.html?numb3=0';
 		},
 		site3: function() {
 			this.stock01(2);
