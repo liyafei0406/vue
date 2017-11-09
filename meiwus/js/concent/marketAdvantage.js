@@ -1,12 +1,12 @@
 var marketAdvantages = {
 	marketAdvantagesbiao: "环保案例",
 	marketAdvantages2_2: [
-				{marketsite:'protection_case.html?numb2=0',marketsImg:'img/kc.jpg',marketsName:'客餐厅',marketsDetails:'LIVING'},
-				{marketsite:'protection_case.html?numb2=1',marketsImg:'img/kc.jpg',marketsName:'阳台',marketsDetails:'BALCONY'},
-				{marketsite:'protection_case.html?numb2=2',marketsImg:'img/kc.jpg',marketsName:'水电',marketsDetails:'WATEN'},
-				{marketsite:'protection_case.html?numb2=3',marketsImg:'img/kc.jpg',marketsName:'卫生间 ',marketsDetails:'TOILET'},
-				{marketsite:'protection_case.html?numb2=4',marketsImg:'img/kc.jpg',marketsName:'卧室',marketsDetails:'BEDROOM'},
-				{marketsite:'protection_case.html?numb2=5',marketsImg:'img/kc.jpg',marketsName:'厨房 ',marketsDetails:'KITCHEN'},
+				{marketsite:'protection_case.html?numb2=0',marketsImg:'img/hl01.jpg',marketsName:'客餐厅',marketsDetails:'LIVING'},
+				{marketsite:'protection_case.html?numb2=1',marketsImg:'img/hl02.jpg',marketsName:'阳台',marketsDetails:'BALCONY'},
+				{marketsite:'protection_case.html?numb2=2',marketsImg:'img/hl03.jpg',marketsName:'水电',marketsDetails:'WATEN'},
+				{marketsite:'protection_case.html?numb2=3',marketsImg:'img/hl04.jpg',marketsName:'卫生间 ',marketsDetails:'TOILET'},
+				{marketsite:'protection_case.html?numb2=4',marketsImg:'img/hl05.jpg',marketsName:'卧室',marketsDetails:'BEDROOM'},
+				{marketsite:'protection_case.html?numb2=5',marketsImg:'img/hl06.jpg',marketsName:'厨房 ',marketsDetails:'KITCHEN'},
 	]
 };
 var a3 = Vue.extend({

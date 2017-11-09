@@ -1,10 +1,10 @@
 var footers = {
 	recordersImg:"img/mwwap_10.jpg",
 	stockers1:[
-		{stockersite:"vm13.site1()",stockersImg1:'img/souye.png',stockersImg2:'img/souye1.png',stockersName:'首页'},
+		{stockersite:"vm13.site1()",stockersImg1:'img/home.png',stockersImg2:'img/home1.png',stockersName:'首页'},
 		{stockersite:"vm13.site2()" ,stockersImg1:'img/link.png',stockersImg2:'img/link1.png',stockersName:'风格'},
-		{stockersite:"vm13.site3()",stockersImg1:'img/Home.png',stockersImg2:'img/Home1.png',stockersName:'电话'},
-		{stockersite:"vm13.func1()",stockersImg1:'img/write.png',stockersImg2:'img/write1.png',stockersName:'留言'}
+		{stockersite:"vm13.site3()",stockersImg1:'img/phone.png',stockersImg2:'img/phone1.png',stockersName:'热线'},
+		{stockersite:"vm13.func1()",stockersImg1:'img/message.png',stockersImg2:'img/message1.png',stockersName:'留言'}
 	],
 	onlinersImg:'img/zaixian.png',
 	onlinersite:'vm14.func2()',
@@ -48,7 +48,7 @@ var vm13 = new Vue({
 		},
 		site3: function() {
 			this.stock01(2);
-			window.location.href='tel://400-709-2868';
+			window.location.href='tel://400-709-0668';
 		},
 		func1: function() {
 			this.stock01(3);

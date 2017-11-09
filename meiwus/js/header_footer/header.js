@@ -60,7 +60,7 @@ var vm2 = new Vue({
 //	}
 });
 var navers = [
-				{id:'icon1',catalogue: 'index.php',names:'首页'},
+				{id:'icon1',catalogue: 'index.html',names:'首页'},
 				{id:'icon2',catalogue: 'system.html?numb1=0',names:'环保保障'},
 				{id:'icon3',catalogue: 'protection_case.html?numb2=0',names:'环保案例'},
 				{id:'icon4',catalogue: 'protection_material.html?numb5=0',names:'环保材料'},

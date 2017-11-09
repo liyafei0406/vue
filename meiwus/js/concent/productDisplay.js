@@ -2,14 +2,14 @@ var ProductDisplays = {
 	ProductDisplaysbiao: "质量管控",
 	ProductDisplaysDI:'system.html?numb1=1',
 	ProductDisplays2:[
-						{imgs:'img/gt1.jpg',ps:'PC1放样标准'},
-						{imgs:'img/gt1.jpg',ps:'水电施工标准'},
-						{imgs:'img/gt1.jpg',ps:'防水施工标准'},
-						{imgs:'img/gt1.jpg',ps:'泥工放工标准'},
-						{imgs:'img/gt1.jpg',ps:'木工框架标准'},
-						{imgs:'img/gt1.jpg',ps:'木工施工标准'},
-						{imgs:'img/gt1.jpg',ps:'油漆基础标准'},
-						{imgs:'img/gt1.jpg',ps:'整体竣工验收'}
+						{imgs:'img/bz01.jpg',ps:'PC1:1放样标准'},
+						{imgs:'img/bz02.jpg',ps:'水电施工标准'},
+						{imgs:'img/bz03.jpg',ps:'防水施工标准'},
+						{imgs:'img/bz04.jpg',ps:'泥工放工标准'},
+						{imgs:'img/bz05.jpg',ps:'木工框架标准'},
+						{imgs:'img/bz06.jpg',ps:'木工施工标准'},
+						{imgs:'img/bz07.jpg',ps:'油漆基础标准'},
+						{imgs:'img/bz08.jpg',ps:'整体竣工验收'}
 						]
 };
 var p19 = Vue.extend({
