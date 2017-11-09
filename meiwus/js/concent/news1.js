@@ -2,8 +2,8 @@ var new1 = {
 	news: "culture.html?numb4=0",
 	newbiao: "品牌故事",
 	newsP:'中国创意快装工场始创于2003年，始终遵循为客户打造环保、智能、省钱、省时、省心、省力专业化的环保智能全装发展战略，依托卓越的设计实力与精湛的施工工艺，严格遵循全过程的高标准控制流程...',
-	newsImg:'img/pp.jpg',
-	newsImg1:'img/ry.jpg'
+	newsImg:'img/ps01.jpg',
+	newsImg1:'img/ps02.jpg'
 	
 };
 //console.log(new1.detailer);

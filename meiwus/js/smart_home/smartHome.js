@@ -19,13 +19,13 @@ var magicpaintingers = {
 		P5_5:'指纹、感受应式3/卡、防泄漏密码、临时手机验证码、应急式钥匙插孔五种开锁模式。',
 		P5_6:'根据光线强弱联动调整窗帘开度，根据空气质量联动开窗通风，打造健康舒适的生活环境。',
 		P5_7:'监控呼吸频率、心跳，发现异常及时报警，保障用户身体健康，并在次日提交完整详尽的睡眠报告，有助改善睡眠状况。',
-		img1:'img/zn01.jpg',
-		img2:'img/zn01.jpg',
-		img3:'img/zn01.jpg',
-		img4:'img/zn01.jpg',
-		img5:'img/zn01.jpg',
-		img6:'img/zn01.jpg',
-		img7:'img/zn01.jpg'
+		img1:'img/znxt01.jpg',
+		img2:'img/znxt02.jpg',
+		img3:'img/znxt03.jpg',
+		img4:'img/znxt04.jpg',
+		img5:'img/znxt05.jpg',
+		img6:'img/znxt06.jpg',
+		img7:'img/znxt07.jpg'
 	}
 };
 var Img1 = Vue.extend({

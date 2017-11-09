@@ -16,20 +16,20 @@ var glasspacers = {
 				h6:'产品保障——产品保正品 集团采购',
 				h7:'软装保障——软装艺术化 点亮生活',
 				h8:'服务保障——水电隐工程 保修十年',
-				img1:"img/pp.jpg",
-				img2:"img/pp.jpg",
-				img3:"img/pp.jpg",
-				img4:"img/pp.jpg",
-				img5:"img/pp.jpg",
-				img6:"img/pp.jpg",
-				img7:"img/pp.jpg",
-				img8:"img/pp.jpg"
+				img1:"img/hd01.jpg",
+				img2:"img/hd02.jpg",
+				img3:"img/hd03.jpg",
+				img4:"img/hd04.jpg",
+				img5:"img/hd05.jpg",
+				img6:"img/hd06.jpg",
+				img7:"img/hd07.jpg",
+				img8:"img/hd08.jpg"
 				},
 				{
 				glasspacersName:'质量管控',
 				h0:"8G质量管控系统",
 				p1:"系统化质检服务 质量保障更放心",
-				h1:'PC1放样标准',
+				h1:'PC1:1放样标准',
 				h2:'水电施工标准',
 				h3:'防水施工标准',
 				h4:'泥工放工标准',
@@ -37,14 +37,14 @@ var glasspacers = {
 				h6:'木工施工标准',
 				h7:'油漆基础标准',
 				h8:'整体竣工验收',
-				img1:"img/pp.jpg",
-				img2:"img/pp.jpg",
-				img3:"img/pp.jpg",
-				img4:"img/pp.jpg",
-				img5:"img/pp.jpg",
-				img6:"img/pp.jpg",
-				img7:"img/pp.jpg",
-				img8:"img/pp.jpg"
+				img1:"img/zk01.jpg",
+				img2:"img/zk02.jpg",
+				img3:"img/zk03.jpg",
+				img4:"img/zk04.jpg",
+				img5:"img/zk05.jpg",
+				img6:"img/zk06.jpg",
+				img7:"img/zk07.jpg",
+				img8:"img/zk08.jpg"
 				}
 	]
 };

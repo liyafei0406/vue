@@ -98,8 +98,8 @@ a {
 	position: relative;
 }
 .ico1 {
-	width: 20px;
-	height: 22px;
+	width: 23px;
+	height: 23px;
 	position: relative;
 	background-image: url("../img/icon-1.png");
 	background-repeat: no-repeat;
@@ -109,10 +109,10 @@ a {
 	background-position: -2px -17px;
 }
 .icon2 {
-	background-position: -42px -17px;
+	background-position: -41px -17px;
 }
 .icon3 {
-	background-position: -82px -17px;
+	background-position: -83px -17px;
 }
 .icon4 {
 	background-position: -122px -17px;
@@ -163,9 +163,12 @@ a {
 	position: relative;
 }
 .stock li img {
-	width: 30%;
-	padding-top: 10px;
-	margin-bottom: 8px;
+	width: 40%;
+	padding-top: 0.15rem;
+	margin-bottom: 0.15rem;
+}
+.stock li:nth-child(3) img {
+	width: 28%;
 }
 .stock li a {
 	text-decoration: none;
@@ -174,8 +177,11 @@ a {
 .stock li .stock_is {
 	position: absolute;
 	left: 50%;
-	margin-left: -15%;
+	margin-left: -20%;
 	display: none;
+}
+.stock li:nth-child(3) .stock_is {
+	margin-left: -14%;
 }
 /*小火箭*/
 .untitled {
